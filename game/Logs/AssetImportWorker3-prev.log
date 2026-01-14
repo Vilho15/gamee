@@ -1,0 +1,45 @@
+Using pre-set license
+Built from '2022.3/release' branch; Version is '2022.3.18f1 (d29bea25151d) revision 13802474'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Education' Language: 'fi' Physical Memory: 6990 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.18f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/gr289381/OneDrive/Documents/moi/gamee/game
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+63445
+Successfully changed project path to: C:/Users/gr289381/OneDrive/Documents/moi/gamee/game
+C:/Users/gr289381/OneDrive/Documents/moi/gamee/game
+received signal from system: SIGSEGV
+Obtained 22 stack frames
+0x00007ff6170083dd (Unity) 
+0x00007ff61700d4a9 (Unity) 
+0x00007ff617fe0021 (Unity) 
+0x00007ff61700c8f6 (Unity) 
+0x00007ff617007c0c (Unity) 
+0x00007ff619424858 (Unity) udnSetPath
+0x00007ff6194ebe18 (Unity) udnSetPath
+0x00007ff6193ee1f0 (Unity) udnSetPath
+0x00007ffd05a55edf (ntdll) _chkstk
+0x00007ffd059ce8c6 (ntdll) RtlFindCharInUnicodeString
+0x00007ffd05a54ede (ntdll) KiUserExceptionDispatcher
+0x00007ff61681552a (Unity) 
+0x00007ff6168104e0 (Unity) 
+0x00007ff61680f018 (Unity) 
+0x00007ff61681c94f (Unity) 
+0x00007ff616814674 (Unity) 
+0x00007ff616815786 (Unity) 
+0x00007ff617b611b8 (Unity) 
+0x00007ff617febe95 (Unity) 
+0x00007ff6193cbb6e (Unity) udnSetPath
+0x00007ffd04ba259d (KERNEL32) BaseThreadInitThunk
+0x00007ffd05a0af78 (ntdll) RtlUserThreadStart
+
