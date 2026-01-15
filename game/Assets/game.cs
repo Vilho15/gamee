@@ -7,11 +7,13 @@ public class game : MonoBehaviour
 {
     [SerializeField] GameObject player;
     [SerializeField] GameObject button;
+    
     public void ogame()
     {
         player.transform.position = button.transform.position;
         Debug.Log("player position: "+ player.transform.position);
         Debug.Log("button position: "+button.transform.position);
+        player.SetActive(true);
     }
     // Start is called before the first frame update
     void Start()
