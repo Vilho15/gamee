@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|c:\\users\\gr289381\\onedrive\\documents\\moi\\gamee\\game\\assets\\buttonhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|solutionrelative:assets\\buttonhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|c:\\users\\gr289381\\onedrive\\documents\\moi\\gamee\\game\\assets\\scripts\\anim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\anim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|c:\\users\\gr289381\\onedrive\\documents\\moi\\gamee\\game\\assets\\scripts\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\Assets\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\Assets\\Buttonhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Buttonhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,15 +43,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "anim.cs",
+              "DocumentMoniker": "C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\Assets\\Scripts\\anim.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\anim.cs",
+              "ToolTip": "C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\Assets\\Scripts\\anim.cs",
+              "RelativeToolTip": "Assets\\Scripts\\anim.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T09:54:25.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "game.cs",
+              "DocumentMoniker": "C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\Assets\\Scripts\\game.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\game.cs",
+              "ToolTip": "C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\Assets\\Scripts\\game.cs",
+              "RelativeToolTip": "Assets\\Scripts\\game.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-16T10:07:40.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "game.cs",
+              "DocumentMoniker": "C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\Assets\\game.cs",
+              "RelativeDocumentMoniker": "Assets\\game.cs",
+              "ToolTip": "C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\Assets\\game.cs",
+              "RelativeToolTip": "Assets\\game.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T12:18:47.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Buttonhandler.cs",
               "DocumentMoniker": "C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\Assets\\Buttonhandler.cs",
               "RelativeDocumentMoniker": "Assets\\Buttonhandler.cs",
               "ToolTip": "C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\Assets\\Buttonhandler.cs",
               "RelativeToolTip": "Assets\\Buttonhandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T12:03:02.869Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T12:03:02.869Z"
             }
           ]
         },

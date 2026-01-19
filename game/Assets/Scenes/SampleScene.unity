@@ -176,6 +176,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1934354892}
   button: {fileID: 63983976}
+  palyer: {fileID: 0}
+  palyer2: {fileID: 0}
+  yes: 0
 --- !u!114 &63983979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,6 +398,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 69804406}
   button: {fileID: 117031963}
+  palyer: {fileID: 0}
+  palyer2: {fileID: 0}
+  yes: 0
 --- !u!114 &117031966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -686,6 +692,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 890854304}
   button: {fileID: 245144983}
+  palyer: {fileID: 0}
+  palyer2: {fileID: 0}
+  yes: 0
 --- !u!114 &245144986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -833,6 +842,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1733449623}
   button: {fileID: 408928621}
+  palyer: {fileID: 0}
+  palyer2: {fileID: 0}
+  yes: 0
 --- !u!114 &408928624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -980,6 +992,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1898278551}
   button: {fileID: 625653999}
+  palyer: {fileID: 0}
+  palyer2: {fileID: 0}
+  yes: 0
 --- !u!114 &625654002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1169,13 +1184,14 @@ GameObject:
   - component: {fileID: 682638348}
   - component: {fileID: 682638350}
   - component: {fileID: 682638349}
+  - component: {fileID: 682638351}
   m_Layer: 5
   m_Name: RawImage (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &682638348
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1183,16 +1199,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682638347}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.023706432, y: 0.00055739004, z: 0.023499172, w: 0.99944264}
+  m_LocalPosition: {x: 0, y: 0, z: 306}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1064595894}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 2.715, y: 0.128, z: 2.697}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 138.36}
+  m_AnchoredPosition: {x: -748, y: -369}
   m_SizeDelta: {x: 100, y: 276.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &682638349
@@ -1230,6 +1246,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682638347}
   m_CullTransparentMesh: 1
+--- !u!95 &682638351
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682638347}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 13e39b85e7556ae41942e55c36fd5b96, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1488,6 +1525,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &967731346
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 967731347}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &967731347
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967731346}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 628, y: 531, z: -223.29413}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1064595889
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,6 +1808,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1254219645}
   button: {fileID: 1188787771}
+  palyer: {fileID: 0}
+  palyer2: {fileID: 0}
+  yes: 0
 --- !u!114 &1188787774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2053,6 +2124,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 164382484}
   button: {fileID: 1275843895}
+  palyer: {fileID: 0}
+  palyer2: {fileID: 0}
+  yes: 0
 --- !u!1 &1314851358
 GameObject:
   m_ObjectHideFlags: 0
@@ -2214,7 +2288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1494835447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2322,6 +2396,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1327249174}
   button: {fileID: 1630144277}
+  palyer: {fileID: 0}
+  palyer2: {fileID: 0}
+  yes: 0
 --- !u!114 &1630144280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2469,6 +2546,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1314851358}
   button: {fileID: 1663558877}
+  palyer: {fileID: 0}
+  palyer2: {fileID: 0}
+  yes: 0
 --- !u!114 &1663558880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2710,6 +2790,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 138338224}
   button: {fileID: 1692003841}
+  palyer: {fileID: 0}
+  palyer2: {fileID: 0}
+  yes: 0
 --- !u!1 &1733449623
 GameObject:
   m_ObjectHideFlags: 0
@@ -2942,6 +3025,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 682638347}
   button: {fileID: 1789620347}
+  palyer: {fileID: 0}
+  palyer2: {fileID: 0}
+  yes: 0
 --- !u!114 &1789620350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3183,6 +3269,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1494835446}
   button: {fileID: 1821009320}
+  palyer: {fileID: 1494835446}
+  palyer2: {fileID: 967731346}
+  yes: 0
 --- !u!1 &1841614253
 GameObject:
   m_ObjectHideFlags: 0
@@ -3330,6 +3419,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1174445191}
   button: {fileID: 1841614253}
+  palyer: {fileID: 0}
+  palyer2: {fileID: 0}
+  yes: 0
 --- !u!1 &1898278551
 GameObject:
   m_ObjectHideFlags: 0
@@ -3552,3 +3644,4 @@ SceneRoots:
   - {fileID: 1944469465}
   - {fileID: 637589503}
   - {fileID: 1754492995}
+  - {fileID: 967731347}
