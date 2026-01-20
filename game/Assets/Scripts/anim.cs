@@ -1,28 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class anim : MonoBehaviour
+public class Anim : MonoBehaviour
 {
-    [SerializeField] Animator animm;
-    // Start is called before the first frame update
+    Animator anim;
+    [SerializeField] bool isoo = false;
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("getkeydown is working");
-            if (animm == null)
-            {
-                Debug.Log("animm is null");
-            }
-            Debug.Log("getkeydown is working");
-            animm.SetTrigger("idle");
+            anim.SetTrigger("Action");
+            isoo = true;
         }
+
     }
 }

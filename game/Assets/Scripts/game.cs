@@ -7,8 +7,7 @@ public class game : MonoBehaviour
 {
     [SerializeField] GameObject player;
     [SerializeField] GameObject button;
-    [SerializeField] GameObject palyer;
-    [SerializeField] GameObject palyer2;
+    
     [SerializeField] bool yes = false;
     
     public void ogame()
@@ -18,22 +17,10 @@ public class game : MonoBehaviour
         Debug.Log("button position: "+button.transform.position);
         player.SetActive(true);
         yes = true;
-        ogame2();
+        
        
     }
-    public void ogame2()
-    {
-       
-      
-        if (yes)
-        {
-            palyer.transform.position = palyer2.transform.position;
-            palyer.SetActive(true);
-            Debug.Log(yes);
-            yes = false;
-        }
-
-    }
+  
     // Start is called before the first frame update
     void Start()
     {
