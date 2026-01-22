@@ -1,24 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class Grabitem : MonoBehaviour
+public class Grabitem : MonoBehaviour, IDragHandler
 {
-    [SerializeField] GameObject go;
-    [SerializeField] GameObject knife;
+    private RectTransform rectTransform;
+    private Canvas canvas;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        rectTransform = GetComponent<RectTransform>();
+        canvas = GetComponentInParent<Canvas>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnDrag(PointerEventData eventData)
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            go.transform.position = knife.transform.position;
-        }
+        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
     }
 }
