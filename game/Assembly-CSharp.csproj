@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\anim.cs" />
     <Compile Include="Assets\Scripts\game.cs" />
     <Compile Include="Assets\Scripts\Grabitem.cs" />
+    <Compile Include="Assets\Scripts\gamee.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

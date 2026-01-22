@@ -355,6 +355,7 @@
 "Assets/grabitem.cs"
 "Assets/Scripts/anim.cs"
 "Assets/Scripts/game.cs"
+"Assets/Scripts/gamee.cs"
 "Assets/Scripts/Grabitem.cs"
 -langversion:9.0
 

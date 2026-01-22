@@ -1217,6 +1217,7 @@ GameObject:
   - component: {fileID: 682638352}
   - component: {fileID: 682638353}
   - component: {fileID: 682638354}
+  - component: {fileID: 682638355}
   m_Layer: 5
   m_Name: RawImage (3)
   m_TagString: Untagged
@@ -1338,6 +1339,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f69bf9d3bf43740914f053f5e647b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &682638355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682638347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97fc70d9e1719454382d30ea56bdf2c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knife: {fileID: 682638347}
+  cucumber: {fileID: 1494835446}
+  anim: {fileID: 1494835451}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2418,6 +2434,7 @@ GameObject:
   - component: {fileID: 1494835450}
   - component: {fileID: 1494835452}
   - component: {fileID: 1494835453}
+  - component: {fileID: 1494835454}
   m_Layer: 5
   m_Name: RawImage
   m_TagString: Untagged
@@ -2577,6 +2594,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f69bf9d3bf43740914f053f5e647b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1494835454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494835446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97fc70d9e1719454382d30ea56bdf2c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knife: {fileID: 682638347}
+  cucumber: {fileID: 1494835446}
+  anim: {fileID: 1494835451}
 --- !u!1 &1630144277
 GameObject:
   m_ObjectHideFlags: 0
