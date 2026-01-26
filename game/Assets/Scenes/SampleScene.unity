@@ -136,6 +136,8 @@ GameObject:
   - component: {fileID: 63983980}
   - component: {fileID: 63983979}
   - component: {fileID: 63983978}
+  - component: {fileID: 63983983}
+  - component: {fileID: 63983982}
   m_Layer: 5
   m_Name: Button (12)
   m_TagString: Untagged
@@ -233,6 +235,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 63983983}
+        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &63983980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,6 +285,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63983976}
   m_CullTransparentMesh: 1
+--- !u!114 &63983982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63983976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forbiddenItems:
+  - {fileID: 1494835449}
+  - {fileID: 1733449624}
+  - {fileID: 69804407}
+  - {fileID: 1254219646}
+  - {fileID: 682638348}
+  - {fileID: 1934354893}
+  - {fileID: 1699339395}
+  burgeuitext: {fileID: 738539359}
+  bigMacRecipe:
+  - MiddleBun
+  - Lettuce
+  - Cheese
+  - Beef
+  - Sauce
+  - Bun2
+  - Lettuce
+  - Sauce
+  - Beef
+  - Onion
+  - Pickeled Cucumber
+  - TopBUn
+--- !u!114 &63983983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63983976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d8bf98afd19bc42b887172e3d0a964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientName: Salt
+  checkItem: {fileID: 63983982}
 --- !u!1 &69804406
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +346,7 @@ GameObject:
   - component: {fileID: 69804408}
   - component: {fileID: 69804410}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: french fries
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -369,6 +431,8 @@ GameObject:
   - component: {fileID: 117031967}
   - component: {fileID: 117031966}
   - component: {fileID: 117031965}
+  - component: {fileID: 117031970}
+  - component: {fileID: 117031969}
   m_Layer: 5
   m_Name: Button (7)
   m_TagString: Untagged
@@ -466,6 +530,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 117031969}
+        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &117031967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -504,6 +580,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117031963}
   m_CullTransparentMesh: 1
+--- !u!114 &117031969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117031963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d8bf98afd19bc42b887172e3d0a964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientName: French Fries
+  checkItem: {fileID: 117031970}
+--- !u!114 &117031970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117031963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forbiddenItems:
+  - {fileID: 1494835449}
+  - {fileID: 1733449624}
+  - {fileID: 69804407}
+  - {fileID: 1254219646}
+  - {fileID: 682638348}
+  - {fileID: 1934354893}
+  - {fileID: 1699339395}
+  burgeuitext: {fileID: 738539359}
+  bigMacRecipe:
+  - MiddleBun
+  - Lettuce
+  - Cheese
+  - Beef
+  - Sauce
+  - Bun2
+  - Lettuce
+  - Sauce
+  - Beef
+  - Onion
+  - Pickeled Cucumber
+  - TopBUn
 --- !u!1 &138338224
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,7 +641,7 @@ GameObject:
   - component: {fileID: 138338226}
   - component: {fileID: 138338228}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: Cheese
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -602,7 +726,7 @@ GameObject:
   - component: {fileID: 164382486}
   - component: {fileID: 164382488}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: Beef
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -674,6 +798,91 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f69bf9d3bf43740914f053f5e647b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &176616271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 176616272}
+  - component: {fileID: 176616275}
+  - component: {fileID: 176616274}
+  - component: {fileID: 176616273}
+  m_Layer: 5
+  m_Name: bottom bun (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &176616272
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176616271}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1064595894}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 28.537}
+  m_SizeDelta: {x: 100, y: 222.79}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &176616273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176616271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85f69bf9d3bf43740914f053f5e647b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &176616274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176616271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: e8cb6f3f9a59eca4db484850abd63e11, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &176616275
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176616271}
+  m_CullTransparentMesh: 1
 --- !u!1 &245144983
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,6 +896,8 @@ GameObject:
   - component: {fileID: 245144987}
   - component: {fileID: 245144986}
   - component: {fileID: 245144985}
+  - component: {fileID: 245144990}
+  - component: {fileID: 245144989}
   m_Layer: 5
   m_Name: Button (5)
   m_TagString: Untagged
@@ -784,6 +995,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 245144989}
+        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &245144987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -822,6 +1045,264 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245144983}
   m_CullTransparentMesh: 1
+--- !u!114 &245144989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245144983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d8bf98afd19bc42b887172e3d0a964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientName: MiddleBun
+  checkItem: {fileID: 245144990}
+--- !u!114 &245144990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245144983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forbiddenItems:
+  - {fileID: 1494835449}
+  - {fileID: 1733449624}
+  - {fileID: 69804407}
+  - {fileID: 1254219646}
+  - {fileID: 682638348}
+  - {fileID: 1934354893}
+  - {fileID: 1699339395}
+  burgeuitext: {fileID: 738539359}
+  bigMacRecipe:
+  - MiddleBun
+  - Lettuce
+  - Cheese
+  - Beef
+  - Sauce
+  - Bun2
+  - Lettuce
+  - Sauce
+  - Beef
+  - Onion
+  - Pickeled Cucumber
+  - TopBUn
+--- !u!1 &389327703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 389327704}
+  - component: {fileID: 389327708}
+  - component: {fileID: 389327707}
+  - component: {fileID: 389327706}
+  - component: {fileID: 389327705}
+  - component: {fileID: 389327710}
+  - component: {fileID: 389327709}
+  m_Layer: 5
+  m_Name: Button (14)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &389327704
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389327703}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1064595894}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 524.6, y: -157.3}
+  m_SizeDelta: {x: 38.7619, y: 85.4909}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &389327705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389327703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 747590232}
+  button: {fileID: 389327703}
+  yes: 0
+--- !u!114 &389327706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389327703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 389327707}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 389327705}
+        m_TargetAssemblyTypeName: game, Assembly-CSharp
+        m_MethodName: ogame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 389327710}
+        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &389327707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389327703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &389327708
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389327703}
+  m_CullTransparentMesh: 1
+--- !u!114 &389327709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389327703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forbiddenItems:
+  - {fileID: 1494835449}
+  - {fileID: 1733449624}
+  - {fileID: 69804407}
+  - {fileID: 1254219646}
+  - {fileID: 682638348}
+  - {fileID: 1934354893}
+  - {fileID: 1699339395}
+  burgeuitext: {fileID: 738539359}
+  bigMacRecipe:
+  - MiddleBun
+  - Lettuce
+  - Cheese
+  - Beef
+  - Sauce
+  - Bun2
+  - Lettuce
+  - Sauce
+  - Beef
+  - Onion
+  - Pickeled Cucumber
+  - TopBUn
+--- !u!114 &389327710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389327703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d8bf98afd19bc42b887172e3d0a964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientName: Sauce
+  checkItem: {fileID: 389327709}
 --- !u!1 &408928621
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,6 +1316,8 @@ GameObject:
   - component: {fileID: 408928625}
   - component: {fileID: 408928624}
   - component: {fileID: 408928623}
+  - component: {fileID: 408928627}
+  - component: {fileID: 408928628}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -932,6 +1415,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 408928627}
+        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &408928625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -970,6 +1465,139 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408928621}
   m_CullTransparentMesh: 1
+--- !u!114 &408928627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408928621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d8bf98afd19bc42b887172e3d0a964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientName: Tomatoes
+  checkItem: {fileID: 408928628}
+--- !u!114 &408928628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408928621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forbiddenItems:
+  - {fileID: 1494835449}
+  - {fileID: 1733449624}
+  - {fileID: 69804407}
+  - {fileID: 1254219646}
+  - {fileID: 682638348}
+  - {fileID: 1934354893}
+  - {fileID: 1699339395}
+  burgeuitext: {fileID: 738539359}
+  bigMacRecipe:
+  - MiddleBun
+  - Lettuce
+  - Cheese
+  - Beef
+  - Sauce
+  - Bun2
+  - Lettuce
+  - Sauce
+  - Beef
+  - Onion
+  - Pickeled Cucumber
+  - TopBUn
+--- !u!1 &544074196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 544074197}
+  - component: {fileID: 544074200}
+  - component: {fileID: 544074199}
+  - component: {fileID: 544074198}
+  m_Layer: 5
+  m_Name: onion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &544074197
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544074196}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1064595894}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -2319, y: 138.36}
+  m_SizeDelta: {x: 100, y: 276.73}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &544074198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544074196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85f69bf9d3bf43740914f053f5e647b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &544074199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544074196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: 15f20e5e29c79c14cb035ba99362d52c, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &544074200
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544074196}
+  m_CullTransparentMesh: 1
 --- !u!1 &625653999
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,6 +1611,8 @@ GameObject:
   - component: {fileID: 625654003}
   - component: {fileID: 625654002}
   - component: {fileID: 625654001}
+  - component: {fileID: 625654006}
+  - component: {fileID: 625654005}
   m_Layer: 5
   m_Name: Button (9)
   m_TagString: Untagged
@@ -1080,6 +1710,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 625654006}
+        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &625654003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1118,6 +1760,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625653999}
   m_CullTransparentMesh: 1
+--- !u!114 &625654005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625653999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forbiddenItems:
+  - {fileID: 1494835449}
+  - {fileID: 1733449624}
+  - {fileID: 69804407}
+  - {fileID: 1254219646}
+  - {fileID: 682638348}
+  - {fileID: 1934354893}
+  - {fileID: 1699339395}
+  burgeuitext: {fileID: 738539359}
+  bigMacRecipe:
+  - MiddleBun
+  - Lettuce
+  - Cheese
+  - Beef
+  - Sauce
+  - Bun2
+  - Lettuce
+  - Sauce
+  - Beef
+  - Onion
+  - Pickeled Cucumber
+  - TopBUn
+--- !u!114 &625654006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625653999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d8bf98afd19bc42b887172e3d0a964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientName: Pickeled Cucumber
+  checkItem: {fileID: 625654005}
 --- !u!1 &637589501
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,6 +1818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 637589503}
   - component: {fileID: 637589502}
+  - component: {fileID: 637589504}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1202,6 +1893,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &637589504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637589501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forbiddenItems:
+  - {fileID: 1494835449}
+  - {fileID: 1733449624}
+  - {fileID: 69804407}
+  - {fileID: 1254219646}
+  - {fileID: 682638348}
+  - {fileID: 1934354893}
+  - {fileID: 1699339395}
+  burgeuitext: {fileID: 738539359}
+  bigMacRecipe:
+  - Beef
+  - Cheese
+  - Lettuce
+  - Sauce
+  - MiddleBun
+  - Beef
+  - Cheese
+  - onion
+  - pickled cucumber
 --- !u!1 &682638347
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,7 +1941,7 @@ GameObject:
   - component: {fileID: 682638354}
   - component: {fileID: 682638355}
   m_Layer: 5
-  m_Name: RawImage (3)
+  m_Name: knife
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1353,7 +2075,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   knife: {fileID: 682638347}
   cucumber: {fileID: 1494835446}
+  cucumber2: {fileID: 1699339394}
   anim: {fileID: 1494835451}
+  isoo: 0
+  isoo2: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1448,6 +2173,227 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &738539357
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 738539358}
+  - component: {fileID: 738539360}
+  - component: {fileID: 738539359}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &738539358
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738539357}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1064595894}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 94.2}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &738539359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738539357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Butrger text
+
+'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4279571736
+  m_fontColor: {r: 0.09433961, g: 0.083214656, b: 0.083214656, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &738539360
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738539357}
+  m_CullTransparentMesh: 1
+--- !u!1 &747590232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 747590233}
+  - component: {fileID: 747590236}
+  - component: {fileID: 747590235}
+  - component: {fileID: 747590234}
+  m_Layer: 5
+  m_Name: food oil
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &747590233
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747590232}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1064595894}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -2319, y: 138.36}
+  m_SizeDelta: {x: 100, y: 276.73}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &747590234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747590232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85f69bf9d3bf43740914f053f5e647b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &747590235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747590232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: 22bee904c1e1cd84b9bc5601c47a1d85, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &747590236
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747590232}
+  m_CullTransparentMesh: 1
 --- !u!1 &890854304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,7 +2407,7 @@ GameObject:
   - component: {fileID: 890854306}
   - component: {fileID: 890854308}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: bottom bun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1756,26 +2702,32 @@ RectTransform:
   - {fileID: 1692003842}
   - {fileID: 1275843896}
   - {fileID: 245144984}
-  - {fileID: 1630144278}
   - {fileID: 117031964}
   - {fileID: 1188787772}
   - {fileID: 625654000}
   - {fileID: 1789620348}
   - {fileID: 1663558878}
   - {fileID: 63983977}
+  - {fileID: 1842650084}
+  - {fileID: 389327704}
+  - {fileID: 1109538272}
   - {fileID: 1494835449}
   - {fileID: 1733449624}
   - {fileID: 1174445192}
   - {fileID: 138338225}
   - {fileID: 164382485}
   - {fileID: 890854305}
-  - {fileID: 1327249175}
+  - {fileID: 176616272}
   - {fileID: 69804407}
   - {fileID: 1254219646}
   - {fileID: 1898278552}
   - {fileID: 682638348}
   - {fileID: 1314851359}
   - {fileID: 1934354893}
+  - {fileID: 1699339395}
+  - {fileID: 544074197}
+  - {fileID: 747590233}
+  - {fileID: 738539358}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1783,6 +2735,216 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1109538271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1109538272}
+  - component: {fileID: 1109538278}
+  - component: {fileID: 1109538277}
+  - component: {fileID: 1109538276}
+  - component: {fileID: 1109538275}
+  - component: {fileID: 1109538274}
+  - component: {fileID: 1109538273}
+  m_Layer: 5
+  m_Name: Button (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1109538272
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109538271}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1064595894}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 294, y: -157.3}
+  m_SizeDelta: {x: 38.7619, y: 85.4909}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1109538273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109538271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forbiddenItems:
+  - {fileID: 1494835449}
+  - {fileID: 1733449624}
+  - {fileID: 69804407}
+  - {fileID: 1254219646}
+  - {fileID: 682638348}
+  - {fileID: 1934354893}
+  - {fileID: 1699339395}
+  burgeuitext: {fileID: 738539359}
+  bigMacRecipe:
+  - MiddleBun
+  - Lettuce
+  - Cheese
+  - Beef
+  - Sauce
+  - Bun2
+  - Lettuce
+  - Sauce
+  - Beef
+  - Onion
+  - Pickeled Cucumber
+  - TopBUn
+--- !u!114 &1109538274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109538271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d8bf98afd19bc42b887172e3d0a964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientName: Bun2
+  checkItem: {fileID: 1109538273}
+--- !u!114 &1109538275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109538271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 176616271}
+  button: {fileID: 1109538271}
+  yes: 0
+--- !u!114 &1109538276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109538271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1109538277}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1109538275}
+        m_TargetAssemblyTypeName: game, Assembly-CSharp
+        m_MethodName: ogame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1109538274}
+        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1109538277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109538271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1109538278
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109538271}
+  m_CullTransparentMesh: 1
 --- !u!1 &1174445191
 GameObject:
   m_ObjectHideFlags: 0
@@ -1796,7 +2958,7 @@ GameObject:
   - component: {fileID: 1174445193}
   - component: {fileID: 1174445195}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: salad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1881,6 +3043,8 @@ GameObject:
   - component: {fileID: 1188787775}
   - component: {fileID: 1188787774}
   - component: {fileID: 1188787773}
+  - component: {fileID: 1188787778}
+  - component: {fileID: 1188787777}
   m_Layer: 5
   m_Name: Button (8)
   m_TagString: Untagged
@@ -1904,7 +3068,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 496, y: -422.6}
+  m_AnchoredPosition: {x: 368.2, y: -422.6}
   m_SizeDelta: {x: 38.7619, y: 85.4909}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1188787773
@@ -1978,6 +3142,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1188787777}
+        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1188787775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2016,6 +3192,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1188787771}
   m_CullTransparentMesh: 1
+--- !u!114 &1188787777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188787771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d8bf98afd19bc42b887172e3d0a964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientName: Fish
+  checkItem: {fileID: 1188787778}
+--- !u!114 &1188787778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188787771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forbiddenItems:
+  - {fileID: 1494835449}
+  - {fileID: 1733449624}
+  - {fileID: 69804407}
+  - {fileID: 1254219646}
+  - {fileID: 682638348}
+  - {fileID: 1934354893}
+  - {fileID: 1699339395}
+  burgeuitext: {fileID: 738539359}
+  bigMacRecipe:
+  - MiddleBun
+  - Lettuce
+  - Cheese
+  - Beef
+  - Sauce
+  - Bun2
+  - Lettuce
+  - Sauce
+  - Beef
+  - Onion
+  - Pickeled Cucumber
+  - TopBUn
 --- !u!1 &1254219645
 GameObject:
   m_ObjectHideFlags: 0
@@ -2029,7 +3253,7 @@ GameObject:
   - component: {fileID: 1254219647}
   - component: {fileID: 1254219649}
   m_Layer: 5
-  m_Name: RawImage (1)
+  m_Name: fish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2114,6 +3338,8 @@ GameObject:
   - component: {fileID: 1275843898}
   - component: {fileID: 1275843897}
   - component: {fileID: 1275843900}
+  - component: {fileID: 1275843902}
+  - component: {fileID: 1275843901}
   m_Layer: 5
   m_Name: Button (4)
   m_TagString: Untagged
@@ -2137,7 +3363,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 281, y: -422.6}
+  m_AnchoredPosition: {x: 212, y: -422.6}
   m_SizeDelta: {x: 38.7619, y: 85.4909}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1275843897
@@ -2187,6 +3413,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275843900}
         m_TargetAssemblyTypeName: game, Assembly-CSharp
         m_MethodName: ogame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1275843901}
+        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2249,6 +3487,54 @@ MonoBehaviour:
   player: {fileID: 164382484}
   button: {fileID: 1275843895}
   yes: 0
+--- !u!114 &1275843901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275843895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d8bf98afd19bc42b887172e3d0a964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientName: Beef
+  checkItem: {fileID: 1275843902}
+--- !u!114 &1275843902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275843895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forbiddenItems:
+  - {fileID: 1494835449}
+  - {fileID: 1733449624}
+  - {fileID: 69804407}
+  - {fileID: 1254219646}
+  - {fileID: 682638348}
+  - {fileID: 1934354893}
+  - {fileID: 1699339395}
+  burgeuitext: {fileID: 738539359}
+  bigMacRecipe:
+  - MiddleBun
+  - Lettuce
+  - Cheese
+  - Beef
+  - Sauce
+  - Bun2
+  - Lettuce
+  - Sauce
+  - Beef
+  - Onion
+  - Pickeled Cucumber
+  - TopBUn
 --- !u!1 &1314851358
 GameObject:
   m_ObjectHideFlags: 0
@@ -2262,7 +3548,7 @@ GameObject:
   - component: {fileID: 1314851360}
   - component: {fileID: 1314851362}
   m_Layer: 5
-  m_Name: RawImage (4)
+  m_Name: bun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2334,91 +3620,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f69bf9d3bf43740914f053f5e647b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1327249174
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1327249175}
-  - component: {fileID: 1327249177}
-  - component: {fileID: 1327249176}
-  - component: {fileID: 1327249178}
-  m_Layer: 5
-  m_Name: RawImage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1327249175
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327249174}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1064595894}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 194.73503}
-  m_SizeDelta: {x: 100, y: 197.3199}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1327249176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327249174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 4a5d302eda022a042afedd270a9025f0, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &1327249177
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327249174}
-  m_CullTransparentMesh: 1
---- !u!114 &1327249178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327249174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85f69bf9d3bf43740914f053f5e647b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1494835446
 GameObject:
   m_ObjectHideFlags: 0
@@ -2436,7 +3637,7 @@ GameObject:
   - component: {fileID: 1494835453}
   - component: {fileID: 1494835454}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: Cucumber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2608,155 +3809,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   knife: {fileID: 682638347}
   cucumber: {fileID: 1494835446}
+  cucumber2: {fileID: 1699339394}
   anim: {fileID: 1494835451}
---- !u!1 &1630144277
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1630144278}
-  - component: {fileID: 1630144282}
-  - component: {fileID: 1630144281}
-  - component: {fileID: 1630144280}
-  - component: {fileID: 1630144279}
-  m_Layer: 5
-  m_Name: Button (6)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1630144278
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630144277}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1064595894}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -145.9, y: -422.6}
-  m_SizeDelta: {x: 38.7619, y: 85.4909}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1630144279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630144277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1327249174}
-  button: {fileID: 1630144277}
-  yes: 0
---- !u!114 &1630144280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630144277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1630144281}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1630144279}
-        m_TargetAssemblyTypeName: game, Assembly-CSharp
-        m_MethodName: ogame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1630144281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630144277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1630144282
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630144277}
-  m_CullTransparentMesh: 1
+  isoo: 0
+  isoo2: 0
 --- !u!1 &1663558877
 GameObject:
   m_ObjectHideFlags: 0
@@ -2770,6 +3826,8 @@ GameObject:
   - component: {fileID: 1663558881}
   - component: {fileID: 1663558880}
   - component: {fileID: 1663558879}
+  - component: {fileID: 1663558884}
+  - component: {fileID: 1663558883}
   m_Layer: 5
   m_Name: Button (11)
   m_TagString: Untagged
@@ -2867,6 +3925,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1663558883}
+        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1663558881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2905,6 +3975,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663558877}
   m_CullTransparentMesh: 1
+--- !u!114 &1663558883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663558877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d8bf98afd19bc42b887172e3d0a964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientName: TopBun
+  checkItem: {fileID: 1663558884}
+--- !u!114 &1663558884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663558877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forbiddenItems:
+  - {fileID: 1494835449}
+  - {fileID: 1733449624}
+  - {fileID: 69804407}
+  - {fileID: 1254219646}
+  - {fileID: 682638348}
+  - {fileID: 1934354893}
+  - {fileID: 1699339395}
+  burgeuitext: {fileID: 738539359}
+  bigMacRecipe:
+  - MiddleBun
+  - Lettuce
+  - Cheese
+  - Beef
+  - Sauce
+  - Bun2
+  - Lettuce
+  - Sauce
+  - Beef
+  - Onion
+  - Pickeled Cucumber
+  - TopBun
 --- !u!1 &1692003841
 GameObject:
   m_ObjectHideFlags: 0
@@ -2918,6 +4036,8 @@ GameObject:
   - component: {fileID: 1692003844}
   - component: {fileID: 1692003843}
   - component: {fileID: 1692003846}
+  - component: {fileID: 1692003847}
+  - component: {fileID: 1692003848}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -3000,6 +4120,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1692003847}
+        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1692003844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3053,6 +4185,139 @@ MonoBehaviour:
   player: {fileID: 138338224}
   button: {fileID: 1692003841}
   yes: 0
+--- !u!114 &1692003847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692003841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d8bf98afd19bc42b887172e3d0a964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientName: Cheese
+  checkItem: {fileID: 1692003848}
+--- !u!114 &1692003848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692003841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forbiddenItems:
+  - {fileID: 1494835449}
+  - {fileID: 1733449624}
+  - {fileID: 69804407}
+  - {fileID: 1254219646}
+  - {fileID: 682638348}
+  - {fileID: 1934354893}
+  - {fileID: 1699339395}
+  burgeuitext: {fileID: 738539359}
+  bigMacRecipe:
+  - MiddleBun
+  - Lettuce
+  - Cheese
+  - Beef
+  - Sauce
+  - Bun2
+  - Lettuce
+  - Sauce
+  - Beef
+  - Onion
+  - Pickeled Cucumber
+  - TopBUn
+--- !u!1 &1699339394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1699339395}
+  - component: {fileID: 1699339398}
+  - component: {fileID: 1699339397}
+  - component: {fileID: 1699339396}
+  m_Layer: 5
+  m_Name: cucumber2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1699339395
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699339394}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1064595894}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -2319, y: 138.36}
+  m_SizeDelta: {x: 100, y: 276.73}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1699339396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699339394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85f69bf9d3bf43740914f053f5e647b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1699339397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699339394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: 654b98b8d1f566948919d652d44c0a2e, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1699339398
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699339394}
+  m_CullTransparentMesh: 1
 --- !u!1 &1733449623
 GameObject:
   m_ObjectHideFlags: 0
@@ -3065,8 +4330,9 @@ GameObject:
   - component: {fileID: 1733449626}
   - component: {fileID: 1733449625}
   - component: {fileID: 1733449628}
+  - component: {fileID: 1733449629}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: Tomatoes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3138,6 +4404,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f69bf9d3bf43740914f053f5e647b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1733449629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733449623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forbiddenItems:
+  - {fileID: 1494835449}
+  - {fileID: 1733449624}
+  - {fileID: 69804407}
+  - {fileID: 1254219646}
+  - {fileID: 682638348}
+  - {fileID: 1934354893}
+  - {fileID: 1699339395}
+  burgeuitext: {fileID: 738539359}
+  bigMacRecipe:
+  - Beef
+  - Cheese
+  - Lettuce
+  - Sauce
+  - MiddleBun
+  - Beef
+  - Cheese
+  - onion
+  - pickled cucumber
 --- !u!1 &1754492991
 GameObject:
   m_ObjectHideFlags: 0
@@ -3151,6 +4448,7 @@ GameObject:
   - component: {fileID: 1754492993}
   - component: {fileID: 1754492992}
   - component: {fileID: 1754492996}
+  - component: {fileID: 1754492997}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -3258,6 +4556,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f69bf9d3bf43740914f053f5e647b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1754492997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754492991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1059732be246d964db549cf3d3269c4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  burgers:
+  - big mac
+  - el maco
+  - double quarter pounder with cheese
+  burgeruitext: {fileID: 738539359}
 --- !u!1 &1789620347
 GameObject:
   m_ObjectHideFlags: 0
@@ -3271,6 +4586,8 @@ GameObject:
   - component: {fileID: 1789620351}
   - component: {fileID: 1789620350}
   - component: {fileID: 1789620349}
+  - component: {fileID: 1789620354}
+  - component: {fileID: 1789620353}
   m_Layer: 5
   m_Name: Button (10)
   m_TagString: Untagged
@@ -3368,6 +4685,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1789620353}
+        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1789620351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3406,6 +4735,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789620347}
   m_CullTransparentMesh: 1
+--- !u!114 &1789620353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789620347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d8bf98afd19bc42b887172e3d0a964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientName: knife
+  checkItem: {fileID: 1789620354}
+--- !u!114 &1789620354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789620347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forbiddenItems:
+  - {fileID: 1494835449}
+  - {fileID: 1733449624}
+  - {fileID: 69804407}
+  - {fileID: 1254219646}
+  - {fileID: 682638348}
+  - {fileID: 1934354893}
+  - {fileID: 1699339395}
+  burgeuitext: {fileID: 738539359}
+  bigMacRecipe:
+  - MiddleBun
+  - Lettuce
+  - Cheese
+  - Beef
+  - Sauce
+  - Bun2
+  - Lettuce
+  - Sauce
+  - Beef
+  - Onion
+  - Pickeled Cucumber
+  - TopBUn
 --- !u!1 &1821009320
 GameObject:
   m_ObjectHideFlags: 0
@@ -3567,6 +4944,8 @@ GameObject:
   - component: {fileID: 1841614256}
   - component: {fileID: 1841614255}
   - component: {fileID: 1841614258}
+  - component: {fileID: 1841614260}
+  - component: {fileID: 1841614259}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -3581,13 +4960,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841614253}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.04928556, w: 0.9987847}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1064595894}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.65}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -572.9, y: -422.6}
@@ -3640,6 +5019,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1841614258}
         m_TargetAssemblyTypeName: game, Assembly-CSharp
         m_MethodName: ogame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1841614259}
+        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3702,6 +5093,264 @@ MonoBehaviour:
   player: {fileID: 1174445191}
   button: {fileID: 1841614253}
   yes: 0
+--- !u!114 &1841614259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841614253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d8bf98afd19bc42b887172e3d0a964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientName: Lettuce
+  checkItem: {fileID: 1841614260}
+--- !u!114 &1841614260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841614253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forbiddenItems:
+  - {fileID: 1494835449}
+  - {fileID: 1733449624}
+  - {fileID: 69804407}
+  - {fileID: 1254219646}
+  - {fileID: 682638348}
+  - {fileID: 1934354893}
+  - {fileID: 1699339395}
+  burgeuitext: {fileID: 738539359}
+  bigMacRecipe:
+  - MiddleBun
+  - Lettuce
+  - Cheese
+  - Beef
+  - Sauce
+  - Bun2
+  - Lettuce
+  - Sauce
+  - Beef
+  - Onion
+  - Pickeled Cucumber
+  - TopBUn
+--- !u!1 &1842650083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1842650084}
+  - component: {fileID: 1842650088}
+  - component: {fileID: 1842650087}
+  - component: {fileID: 1842650086}
+  - component: {fileID: 1842650085}
+  - component: {fileID: 1842650090}
+  - component: {fileID: 1842650089}
+  m_Layer: 5
+  m_Name: Button (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1842650084
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842650083}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1064595894}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 752.9001, y: -157.3}
+  m_SizeDelta: {x: 38.7619, y: 85.4909}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1842650085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842650083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 544074196}
+  button: {fileID: 1842650083}
+  yes: 0
+--- !u!114 &1842650086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842650083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1842650087}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1842650085}
+        m_TargetAssemblyTypeName: game, Assembly-CSharp
+        m_MethodName: ogame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1842650089}
+        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1842650087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842650083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1842650088
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842650083}
+  m_CullTransparentMesh: 1
+--- !u!114 &1842650089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842650083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d8bf98afd19bc42b887172e3d0a964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientName: Onion
+  checkItem: {fileID: 1842650090}
+--- !u!114 &1842650090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842650083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forbiddenItems:
+  - {fileID: 1494835449}
+  - {fileID: 1733449624}
+  - {fileID: 69804407}
+  - {fileID: 1254219646}
+  - {fileID: 682638348}
+  - {fileID: 1934354893}
+  - {fileID: 1699339395}
+  burgeuitext: {fileID: 738539359}
+  bigMacRecipe:
+  - MiddleBun
+  - Lettuce
+  - Cheese
+  - Beef
+  - Sauce
+  - Bun2
+  - Lettuce
+  - Sauce
+  - Beef
+  - Onion
+  - Pickeled Cucumber
+  - TopBUn
 --- !u!1 &1898278551
 GameObject:
   m_ObjectHideFlags: 0
@@ -3715,7 +5364,7 @@ GameObject:
   - component: {fileID: 1898278553}
   - component: {fileID: 1898278555}
   m_Layer: 5
-  m_Name: RawImage (2)
+  m_Name: pickled cucumber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3800,7 +5449,7 @@ GameObject:
   - component: {fileID: 1934354894}
   - component: {fileID: 1934354896}
   m_Layer: 5
-  m_Name: RawImage (5)
+  m_Name: salt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

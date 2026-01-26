@@ -60,8 +60,11 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.18f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\textsystem.cs" />
     <Compile Include="Assets\grabitem.cs" />
     <Compile Include="Assets\Scripts\anim.cs" />
+    <Compile Include="Assets\Scripts\checkitem.cs" />
+    <Compile Include="Assets\Scripts\IngredienButton.cs" />
     <Compile Include="Assets\Scripts\game.cs" />
     <Compile Include="Assets\Scripts\Grabitem.cs" />
     <Compile Include="Assets\Scripts\gamee.cs" />
