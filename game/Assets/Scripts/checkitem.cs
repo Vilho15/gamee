@@ -34,9 +34,17 @@ public class CheckItem : MonoBehaviour
         Debug.Log($"[{gameObject.name}] index = {currentIndex}");
         Debug.Log("toimii");
         string cleanText = burgeuitext.text.ToLower().Replace("\n", "Tilaus: ");
+        Debug.Log("CLEAN TEXT: '" + cleanText + "'");
 
         if (cleanText.Contains("big mac"))
-        {  
+        {
+            Debug.Log("CLEAN TEXT: '" + cleanText + "'");
+            Debug.Log("Klikattiin: " + clickedTransform.name);
+
+            foreach (var item in forbiddenItems)
+            {
+                Debug.Log("Forbidden listassa: " + item.name);
+            }
             if (forbiddenItems.Contains(clickedTransform))
             {
                 Debug.Log("?? Et voi lisätä tätä Big Maciin: " + clickedTransform.name);
