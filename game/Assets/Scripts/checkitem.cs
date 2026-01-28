@@ -23,16 +23,20 @@ public class CheckItem : MonoBehaviour
         "pickled cucumber"
     };
 
-   
+    private void Awake()
+    {
+        Debug.Log("CheckItem heräsi: " + gameObject.name);
+    }
 
     private int currentIndex = 0;
     public void TryAddIngredient(Transform clickedTransform, string ingredientName)
-    {            
+    {
+        Debug.Log($"[{gameObject.name}] index = {currentIndex}");
         Debug.Log("toimii");
-        string cleanText = burgeuitext.text.ToLower().Replace("\n", " ");
+        string cleanText = burgeuitext.text.ToLower().Replace("\n", "Tilaus: ");
 
         if (cleanText.Contains("big mac"))
-        {
+        {  
             if (forbiddenItems.Contains(clickedTransform))
             {
                 Debug.Log("?? Et voi lisätä tätä Big Maciin: " + clickedTransform.name);
@@ -47,7 +51,11 @@ public class CheckItem : MonoBehaviour
             return;
         }
 
-        if (ingredientName == bigMacRecipe[currentIndex])
+        if (string.Equals(
+     ingredientName,
+     bigMacRecipe[currentIndex],
+     System.StringComparison.OrdinalIgnoreCase))
+
         {
             Debug.Log("? Oikea ainesosa: " + ingredientName);
             currentIndex++;

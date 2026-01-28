@@ -456,7 +456,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 496, y: -422.6}
+  m_AnchoredPosition: {x: 462, y: -422.6}
   m_SizeDelta: {x: 38.7619, y: 85.4909}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &117031965
@@ -921,7 +921,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 45, y: -422.6}
+  m_AnchoredPosition: {x: -73, y: -422.6}
   m_SizeDelta: {x: 38.7619, y: 85.4909}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &245144985
@@ -983,9 +983,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 245144985}
-        m_TargetAssemblyTypeName: game, Assembly-CSharp
-        m_MethodName: ogame
+      - m_Target: {fileID: 245144989}
+        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -995,9 +995,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 245144989}
-        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
-        m_MethodName: OnClick
+      - m_Target: {fileID: 245144985}
+        m_TargetAssemblyTypeName: game, Assembly-CSharp
+        m_MethodName: ogame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1636,7 +1636,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 633.6, y: -422.6}
+  m_AnchoredPosition: {x: 611, y: -422.6}
   m_SizeDelta: {x: 38.7619, y: 85.4909}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &625654001
@@ -3068,7 +3068,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 368.2, y: -422.6}
+  m_AnchoredPosition: {x: 300, y: -422.6}
   m_SizeDelta: {x: 38.7619, y: 85.4909}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1188787773
@@ -3363,7 +3363,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 212, y: -422.6}
+  m_AnchoredPosition: {x: 113, y: -422.6}
   m_SizeDelta: {x: 38.7619, y: 85.4909}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1275843897
@@ -3851,7 +3851,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 918.3, y: -422.6}
+  m_AnchoredPosition: {x: 905, y: -422.6}
   m_SizeDelta: {x: 38.7619, y: 85.4909}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1663558879
@@ -4330,7 +4330,6 @@ GameObject:
   - component: {fileID: 1733449626}
   - component: {fileID: 1733449625}
   - component: {fileID: 1733449628}
-  - component: {fileID: 1733449629}
   m_Layer: 5
   m_Name: Tomatoes
   m_TagString: Untagged
@@ -4404,37 +4403,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f69bf9d3bf43740914f053f5e647b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1733449629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733449623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forbiddenItems:
-  - {fileID: 1494835449}
-  - {fileID: 1733449624}
-  - {fileID: 69804407}
-  - {fileID: 1254219646}
-  - {fileID: 682638348}
-  - {fileID: 1934354893}
-  - {fileID: 1699339395}
-  burgeuitext: {fileID: 738539359}
-  bigMacRecipe:
-  - Beef
-  - Cheese
-  - Lettuce
-  - Sauce
-  - MiddleBun
-  - Beef
-  - Cheese
-  - onion
-  - pickled cucumber
 --- !u!1 &1754492991
 GameObject:
   m_ObjectHideFlags: 0
@@ -4611,7 +4579,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 792.4, y: -422.6}
+  m_AnchoredPosition: {x: 757, y: -422.6}
   m_SizeDelta: {x: 38.7619, y: 85.4909}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1789620349
@@ -4796,6 +4764,8 @@ GameObject:
   - component: {fileID: 1821009323}
   - component: {fileID: 1821009322}
   - component: {fileID: 1821009325}
+  - component: {fileID: 1821009327}
+  - component: {fileID: 1821009326}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -4866,6 +4836,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1821009327}
+        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1821009325}
         m_TargetAssemblyTypeName: game, Assembly-CSharp
         m_MethodName: ogame
@@ -4931,6 +4913,54 @@ MonoBehaviour:
   player: {fileID: 1494835446}
   button: {fileID: 1821009320}
   yes: 0
+--- !u!114 &1821009326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821009320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forbiddenItems:
+  - {fileID: 1494835449}
+  - {fileID: 1733449624}
+  - {fileID: 69804407}
+  - {fileID: 1254219646}
+  - {fileID: 682638348}
+  - {fileID: 1934354893}
+  - {fileID: 1699339395}
+  burgeuitext: {fileID: 738539359}
+  bigMacRecipe:
+  - MiddleBun
+  - Lettuce
+  - Cheese
+  - Beef
+  - Sauce
+  - Bun2
+  - Lettuce
+  - Sauce
+  - Beef
+  - Onion
+  - Pickeled Cucumber
+  - TopBUn
+--- !u!114 &1821009327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821009320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d8bf98afd19bc42b887172e3d0a964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientName: Cucumber
+  checkItem: {fileID: 1821009326}
 --- !u!1 &1841614253
 GameObject:
   m_ObjectHideFlags: 0
