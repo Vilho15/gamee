@@ -2,80 +2,103 @@ using System.Collections.Generic;
 
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 
 public class CheckItem : MonoBehaviour
 {
     [SerializeField] List<Transform> forbiddenItems;
     [SerializeField] TextMeshProUGUI burgeuitext;
- 
-
-    public List<string> bigMacRecipe = new List<string>()
+    private bool bigMacInitialized = false;
+    [SerializeField] GameObject bigmac;
+    private List<string> addedIngredients = new List<string>();
+    [SerializeField] GameObject ui;
+    public static List<string> bigMacRecipe = new List<string>()
     {
-        "Beef",
-        "Cheese",
+        "Bottom Bun",
         "Lettuce",
-        "Sauce",
-        "MiddleBun",
-        "Beef",
         "Cheese",
-        "onion",
-        "pickled cucumber"
+        "Beef",
+        "Sauce",
+        "Bun2",
+        "Pickeled Cucumber",  
+        "Onion",
+        "TopBun"
+
+
     };
 
     private void Awake()
     {
         Debug.Log("CheckItem heräsi: " + gameObject.name);
+        Debug.Log($"CheckItem heräsi: {gameObject.name} | ID: {GetInstanceID()}");
     }
+    
 
-    private int currentIndex = 0;
-    public void TryAddIngredient(Transform clickedTransform, string ingredientName)
+    private static int currentIndex = 0;
+
+    public void TryAddIngredient()
     {
-        Debug.Log($"[{gameObject.name}] index = {currentIndex}");
-        Debug.Log("toimii");
-        string cleanText = burgeuitext.text.ToLower().Replace("\n", "Tilaus: ");
-        Debug.Log("CLEAN TEXT: '" + cleanText + "'");
-
-        if (cleanText.Contains("big mac"))
+        // ?? 0?? TARKISTUS: Onko valittuna Big Mac
+        if (burgeuitext == null || !burgeuitext.text.ToLower().Contains("big mac"))
         {
-            Debug.Log("CLEAN TEXT: '" + cleanText + "'");
-            Debug.Log("Klikattiin: " + clickedTransform.name);
+            Debug.Log("?? Valittuna ei ole Big Mac – ainesosia ei käsitellä");
+            return;
+        }
 
-            foreach (var item in forbiddenItems)
+        GameObject clicked = EventSystem.current.currentSelectedGameObject;
+
+        if (clicked == null)
+        {
+            Debug.LogError("? Klikattua UI-elementtiä ei löytynyt");
+            return;
+        }
+
+        Transform clickedTransform = clicked.transform;
+        string ingredientName = clickedTransform.name.Replace("(Clone)", "").Trim();
+
+        Debug.Log($"Klikattiin nappia: {ingredientName}");
+
+        // ?? 1?? KIELLETTY TARKISTUS
+        foreach (Transform forbidden in forbiddenItems)
+        {
+            if (forbidden == clickedTransform)
             {
-                Debug.Log("Forbidden listassa: " + item.name);
-            }
-            if (forbiddenItems.Contains(clickedTransform))
-            {
-                Debug.Log("?? Et voi lisätä tätä Big Maciin: " + clickedTransform.name);
+                Debug.Log($"? Et voi lisätä tätä Big Maciin: {ingredientName}");
                 return;
             }
         }
 
-        // 3?? Normaali reseptitarkistus
-        if (currentIndex >= bigMacRecipe.Count)
+        // ?? 2?? ONKO JO LISÄTTY
+        if (addedIngredients.Contains(ingredientName))
         {
-            Debug.Log("Big Mac on jo valmis!");
+            Debug.Log($"?? {ingredientName} on jo lisätty Big Maciin");
             return;
         }
 
-        if (string.Equals(
-     ingredientName,
-     bigMacRecipe[currentIndex],
-     System.StringComparison.OrdinalIgnoreCase))
+        // ?? 3?? LISÄTÄÄN AINESOSA
+        addedIngredients.Add(ingredientName);
+        Debug.Log($"? Lisätty Big Maciin: {ingredientName}");
 
+        // ?? 4?? ONKO KAIKKI LISÄTTY
+        if (addedIngredients.Count >= bigMacRecipe.Count)
         {
-            Debug.Log("? Oikea ainesosa: " + ingredientName);
-            currentIndex++;
-        }
-        else
-        {
-            Debug.Log("? VÄÄRÄ AINESOSA! Klikattiin: "
-                + ingredientName
-                + " | Odotettiin: "
-                + bigMacRecipe[currentIndex]);
+            Debug.Log("?? KAIKKI ainesosat lisätty – Big Mac on valmis!");
+            bigmac.SetActive(true);
+            ui.SetActive(true);
         }
     }
-    
+
+
+    public void ResetRecipe()
+    {
+        currentIndex = 0;
+        bigMacInitialized = false;
+        addedIngredients.Clear();
+
+        Debug.Log("Resepti resetattu");
+        Debug.Log("index: " + currentIndex);
+    }
+
 
 }

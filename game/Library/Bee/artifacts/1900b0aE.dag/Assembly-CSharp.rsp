@@ -354,11 +354,14 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/grabitem.cs"
 "Assets/Scripts/anim.cs"
+"Assets/Scripts/ButtonHandler.cs"
 "Assets/Scripts/checkitem.cs"
+"Assets/Scripts/checkitemcheck.cs"
 "Assets/Scripts/game.cs"
 "Assets/Scripts/gamee.cs"
 "Assets/Scripts/Grabitem.cs"
 "Assets/Scripts/IngredienButton.cs"
+"Assets/Scripts/itemcheck.cs"
 "Assets/Scripts/textsystem.cs"
 -langversion:9.0
 

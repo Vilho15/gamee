@@ -11,7 +11,7 @@ public class Textsystem : MonoBehaviour
     void OnMouseDown()
     {
         int index = Random.Range(0, burgers.Length);
-        burgeruitext.text = "Tilaus: " + burgers[index];
+        burgeruitext.text =   burgers[index];
     }
     // Start is called before the first frame update
     void Start()

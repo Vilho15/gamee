@@ -8,6 +8,6 @@ public class IngredientButton : MonoBehaviour
 
     public void OnClick()
     {
-        checkItem.TryAddIngredient(transform, ingredientName);
+        checkItem.TryAddIngredient();
     }
 }
