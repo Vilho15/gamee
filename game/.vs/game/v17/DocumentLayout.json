@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\assets\\scripts\\checkitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\checkitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\assets\\scripts\\checkitemcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\checkitemcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\assets\\scripts\\itemcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\itemcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|c:\\users\\gr289381\\onedrive\\documents\\moi\\gamee\\game\\assets\\scripts\\checkitemcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\checkitemcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|c:\\users\\gr289381\\onedrive\\documents\\moi\\gamee\\game\\assets\\scripts\\checkitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\checkitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\assets\\scripts\\buttonhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buttonhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\assets\\scripts\\ingredienbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ingredienbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|c:\\users\\gr289381\\onedrive\\documents\\moi\\gamee\\game\\assets\\scripts\\buttonhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buttonhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|Assembly-CSharp.csproj|C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\assets\\scripts\\textsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,26 +78,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ButtonHandler.cs",
               "DocumentMoniker": "C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\Assets\\Scripts\\ButtonHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ButtonHandler.cs",
               "ToolTip": "C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\Assets\\Scripts\\ButtonHandler.cs",
               "RelativeToolTip": "Assets\\Scripts\\ButtonHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAArwC8AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T18:11:38.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-30T18:11:38.408Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "checkitemcheck.cs",
               "DocumentMoniker": "C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\Assets\\Scripts\\checkitemcheck.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\checkitemcheck.cs",
               "ToolTip": "C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\Assets\\Scripts\\checkitemcheck.cs",
               "RelativeToolTip": "Assets\\Scripts\\checkitemcheck.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-30T16:07:48.75Z",
               "EditorCaption": ""
@@ -110,14 +109,27 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\itemcheck.cs",
               "ToolTip": "C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\Assets\\Scripts\\itemcheck.cs",
               "RelativeToolTip": "Assets\\Scripts\\itemcheck.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwG4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-30T14:43:45.098Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "checkitem.cs",
+              "DocumentMoniker": "C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\Assets\\Scripts\\checkitem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\checkitem.cs",
+              "ToolTip": "C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\Assets\\Scripts\\checkitem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\checkitem.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA5wDoAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T09:07:29.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "IngredienButton.cs",
               "DocumentMoniker": "C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\Assets\\Scripts\\IngredienButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\IngredienButton.cs",
@@ -125,21 +137,7 @@
               "RelativeToolTip": "Assets\\Scripts\\IngredienButton.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T16:11:47.885Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "checkitem.cs",
-              "DocumentMoniker": "C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\Assets\\Scripts\\checkitem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\checkitem.cs",
-              "ToolTip": "C:\\Users\\gr289381\\OneDrive\\Documents\\moi\\gamee\\game\\Assets\\Scripts\\checkitem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\checkitem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T09:07:29.442Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-26T16:11:47.885Z"
             },
             {
               "$type": "Document",

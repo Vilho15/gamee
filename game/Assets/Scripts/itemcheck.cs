@@ -10,7 +10,12 @@ public class itemcheck : MonoBehaviour
     [SerializeField] TextMeshProUGUI burgeuitext;
     private bool bigMacInitialized = false;
     [SerializeField] GameObject ui;
+    [SerializeField] GameObject button;
     [SerializeField] GameObject bigmac;
+    [SerializeField] private int wrongIngredientClicks = 0;
+    [SerializeField] private TextMeshProUGUI feedbackText;
+    [SerializeField] private int maxWrongClicks = 7;
+    [SerializeField] GameObject text;
     private List<string> addedIngredients = new List<string>();
     public static List<string> QpwcRecipe = new List<string>()
     {
@@ -25,11 +30,39 @@ public class itemcheck : MonoBehaviour
 
 
     };
+    void ShowMessage(string message)
+    {
+        text.SetActive(true);
+
+        if (feedbackText != null)
+        {
+            text.SetActive(true);
+            feedbackText.text = message;
+        }
+        text.SetActive(true);
+
+        Debug.Log(message); // voit poistaa jos et halua konsoliin
+    }
+
+    void CheckWrongClicks()
+    {
+        if (wrongIngredientClicks >= maxWrongClicks)
+        {
+            
+            Debug.Log("?? Liikaa vääriä ainesosia! Epäonnistuit.");
+
+            // tänne voi laittaa:
+            // - game over ruudun
+            // - UI-varoituksen
+            // - resetin
+        }
+    }
     public void TryAddIngredient()
     {
         // ?? 0?? TARKISTUS: Onko valittuna Big Mac
         if (burgeuitext == null || !burgeuitext.text.ToLower().Contains("quarter pounder with cheese"))
         {
+           
             Debug.Log("?? Valittuna ei ole qpwr – ainesosia ei käsitellä");
             return;
         }
@@ -52,6 +85,7 @@ public class itemcheck : MonoBehaviour
         {
             if (forbidden == clickedTransform)
             {
+                wrongIngredientClicks++;
                 Debug.Log($"? Et voi lisätä tätä Big Maciin: {ingredientName}");
                 return;
             }
@@ -72,8 +106,32 @@ public class itemcheck : MonoBehaviour
         if (addedIngredients.Count >= QpwcRecipe.Count)
         {
             Debug.Log("?? KAIKKI ainesosat lisätty – qpwr on valmis!");
+            LogPerformance();
             bigmac.SetActive(true);
             ui.SetActive(true);
+        }
+    }
+    void LogPerformance()
+    {
+        if (wrongIngredientClicks == 0)
+        {
+            ShowMessage("?? Täydellinen suoritus – ei virheitä!");
+        }
+        else if (wrongIngredientClicks == 1)
+        {
+           ShowMessage("?? Teit yhden virheen");
+        }
+        else if (wrongIngredientClicks == 2)
+        {
+            ShowMessage("?? Teit kaksi virhettä");
+        }
+        else if (wrongIngredientClicks == 3)
+        {
+            ShowMessage("?? Teit kolme virhettä");
+        }
+        else
+        {
+            ShowMessage("?? Teit neljä tai enemmän virheitä");
         }
     }
     // Start is called before the first frame update

@@ -9,10 +9,15 @@ public class CheckItem : MonoBehaviour
 {
     [SerializeField] List<Transform> forbiddenItems;
     [SerializeField] TextMeshProUGUI burgeuitext;
+      [SerializeField] GameObject button;
     private bool bigMacInitialized = false;
     [SerializeField] GameObject bigmac;
+    [SerializeField] private int wrongIngredientClicks = 0;
+    [SerializeField] private int maxWrongClicks = 7;
     private List<string> addedIngredients = new List<string>();
     [SerializeField] GameObject ui;
+    [SerializeField] GameObject text;
+    [SerializeField] private TextMeshProUGUI feedbackText;
     public static List<string> bigMacRecipe = new List<string>()
     {
         "Bottom Bun",
@@ -27,7 +32,18 @@ public class CheckItem : MonoBehaviour
 
 
     };
+    void CheckWrongClicks()
+    {
+        if (wrongIngredientClicks >= maxWrongClicks)
+        {
+            Debug.Log("?? Liikaa vääriä ainesosia! Epäonnistuit.");
 
+            // tänne voi laittaa:
+            // - game over ruudun
+            // - UI-varoituksen
+            // - resetin
+        }
+    }
     private void Awake()
     {
         Debug.Log("CheckItem heräsi: " + gameObject.name);
@@ -42,6 +58,7 @@ public class CheckItem : MonoBehaviour
         // ?? 0?? TARKISTUS: Onko valittuna Big Mac
         if (burgeuitext == null || !burgeuitext.text.ToLower().Contains("big mac"))
         {
+           
             Debug.Log("?? Valittuna ei ole Big Mac – ainesosia ei käsitellä");
             return;
         }
@@ -64,6 +81,7 @@ public class CheckItem : MonoBehaviour
         {
             if (forbidden == clickedTransform)
             {
+                wrongIngredientClicks++;
                 Debug.Log($"? Et voi lisätä tätä Big Maciin: {ingredientName}");
                 return;
             }
@@ -84,11 +102,47 @@ public class CheckItem : MonoBehaviour
         if (addedIngredients.Count >= bigMacRecipe.Count)
         {
             Debug.Log("?? KAIKKI ainesosat lisätty – Big Mac on valmis!");
+            LogPerformance();
             bigmac.SetActive(true);
             ui.SetActive(true);
         }
     }
+    void ShowMessage(string message)
+    {
+        text.SetActive(true);
 
+        if (feedbackText != null)
+        {
+            text.SetActive(true);
+            feedbackText.text = message;
+        }
+        text.SetActive(true);
+
+        Debug.Log(message); // voit poistaa jos et halua konsoliin
+    }
+    void LogPerformance()
+    {
+        if (wrongIngredientClicks == 0)
+        {
+            ShowMessage("?? Täydellinen suoritus – ei virheitä!");
+        }
+        else if (wrongIngredientClicks == 1)
+        {
+            ShowMessage("?? Teit yhden virheen");
+        }
+        else if (wrongIngredientClicks == 2)
+        {
+            ShowMessage("?? Teit kaksi virhettä");
+        }
+        else if (wrongIngredientClicks == 3)
+        {
+            ShowMessage("?? Teit kolme virhettä");
+        }
+        else
+        {
+            ShowMessage("?? Teit neljä tai enemmän virheitä");
+        }
+    }
 
     public void ResetRecipe()
     {
