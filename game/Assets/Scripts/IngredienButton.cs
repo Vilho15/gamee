@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class IngredientButton : MonoBehaviour
 {
     public string ingredientName;
-    public CheckItem checkItem;
+    public CheckItembigmacrecipe checkItem;
 
     public void OnClick()
     {
