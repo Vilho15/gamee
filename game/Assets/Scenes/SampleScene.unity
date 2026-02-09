@@ -175,9 +175,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1074349800}
+  objectpictueres: {fileID: 0}
   button: {fileID: 19758976}
-  yes: 0
 --- !u!114 &19758979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1030,9 +1029,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1934354892}
+  objectpictueres: {fileID: 0}
   button: {fileID: 63983976}
-  yes: 0
 --- !u!114 &63983979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1300,9 +1298,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 69804406}
+  objectpictueres: {fileID: 0}
   button: {fileID: 117031963}
-  yes: 0
 --- !u!114 &117031966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2058,7 +2055,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &182762827
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2848,9 +2845,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 890854304}
+  objectpictueres: {fileID: 0}
   button: {fileID: 245144983}
-  yes: 0
 --- !u!114 &245144986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3837,9 +3833,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 747590232}
+  objectpictueres: {fileID: 0}
   button: {fileID: 389327703}
-  yes: 0
 --- !u!114 &389327706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4022,9 +4017,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1733449623}
+  objectpictueres: {fileID: 0}
   button: {fileID: 408928621}
-  yes: 0
 --- !u!114 &408928624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4693,9 +4687,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1898278551}
+  objectpictueres: {fileID: 0}
   button: {fileID: 625653999}
-  yes: 0
 --- !u!114 &625654002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4923,6 +4916,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 0}
+  bigmac: {fileID: 1297208481}
+  uipanel: {fileID: 0}
+  wrongingredientsclicksrawimage: {fileID: 0}
   forbiddenItems:
   - {fileID: 1494835449}
   - {fileID: 1733449624}
@@ -4931,14 +4928,9 @@ MonoBehaviour:
   - {fileID: 682638348}
   - {fileID: 1934354893}
   - {fileID: 1699339395}
-  burgeuitext: {fileID: 738539359}
-  button: {fileID: 0}
-  bigmac: {fileID: 1297208481}
+  whatburgertext: {fileID: 0}
+  wrongingredientsclickstext: {fileID: 0}
   wrongIngredientClicks: 0
-  maxWrongClicks: 7
-  ui: {fileID: 0}
-  text: {fileID: 0}
-  feedbackText: {fileID: 0}
 --- !u!1 &650025941
 GameObject:
   m_ObjectHideFlags: 0
@@ -5292,10 +5284,8 @@ GameObject:
   - component: {fileID: 682638350}
   - component: {fileID: 682638349}
   - component: {fileID: 682638351}
-  - component: {fileID: 682638352}
   - component: {fileID: 682638353}
   - component: {fileID: 682638354}
-  - component: {fileID: 682638355}
   m_Layer: 5
   m_Name: knife
   m_TagString: Untagged
@@ -5378,19 +5368,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &682638352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 682638347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4e92ac0f16ea3e4ba33c073923008d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isoo: 0
 --- !u!114 &682638353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5417,24 +5394,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f69bf9d3bf43740914f053f5e647b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &682638355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 682638347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97fc70d9e1719454382d30ea56bdf2c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  knife: {fileID: 682638347}
-  cucumber: {fileID: 1494835446}
-  cucumber2: {fileID: 1699339394}
-  anim: {fileID: 1494835451}
-  isoo: 0
-  isoo2: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -7268,6 +7227,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 1264876108}
+  bigmac: {fileID: 1297208481}
+  uipanel: {fileID: 0}
+  wrongingredientsclicksrawimage: {fileID: 0}
   forbiddenItems:
   - {fileID: 1821009321}
   - {fileID: 408928622}
@@ -7276,14 +7239,9 @@ MonoBehaviour:
   - {fileID: 1789620348}
   - {fileID: 63983977}
   - {fileID: 1699339395}
-  burgeuitext: {fileID: 738539359}
-  button: {fileID: 1264876108}
-  bigmac: {fileID: 1297208481}
+  whatburgertext: {fileID: 0}
+  wrongingredientsclickstext: {fileID: 0}
   wrongIngredientClicks: 0
-  maxWrongClicks: 7
-  ui: {fileID: 2141579450}
-  text: {fileID: 654677428}
-  feedbackText: {fileID: 182762828}
 --- !u!114 &1064595896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7372,10 +7330,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Ingredients: {fileID: 1937516815}
   Button: {fileID: 1264876108}
-  burgeuitext: {fileID: 738539359}
   Ingredientsbigmac: {fileID: 212075544}
-  Button2: {fileID: 0}
   Ingredientsqpwc: {fileID: 170285656}
+  uitext: {fileID: 0}
 --- !u!1 &1074349800
 GameObject:
   m_ObjectHideFlags: 0
@@ -7500,9 +7457,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 176616271}
+  objectpictueres: {fileID: 0}
   button: {fileID: 1109538271}
-  yes: 0
 --- !u!114 &1109538276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7685,9 +7641,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 783405447}
+  objectpictueres: {fileID: 0}
   button: {fileID: 1117396262}
-  yes: 0
 --- !u!114 &1117396265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8223,9 +8178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1254219645}
+  objectpictueres: {fileID: 0}
   button: {fileID: 1188787771}
-  yes: 0
 --- !u!114 &1188787774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8962,9 +8916,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 164382484}
+  objectpictueres: {fileID: 0}
   button: {fileID: 1275843895}
-  yes: 0
 --- !u!1 &1290360306
 GameObject:
   m_ObjectHideFlags: 0
@@ -9310,9 +9263,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1266790105}
+  objectpictueres: {fileID: 0}
   button: {fileID: 1403164904}
-  yes: 0
 --- !u!114 &1403164907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9739,7 +9691,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4e92ac0f16ea3e4ba33c073923008d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isoo: 0
 --- !u!114 &1494835453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9764,12 +9715,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97fc70d9e1719454382d30ea56bdf2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knife: {fileID: 682638347}
-  cucumber: {fileID: 1494835446}
-  cucumber2: {fileID: 1699339394}
-  anim: {fileID: 1494835451}
-  isoo: 0
-  isoo2: 0
 --- !u!1 &1515903832
 GameObject:
   m_ObjectHideFlags: 0
@@ -10224,9 +10169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1314851358}
+  objectpictueres: {fileID: 0}
   button: {fileID: 1663558877}
-  yes: 0
 --- !u!114 &1663558880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10539,9 +10483,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 138338224}
+  objectpictueres: {fileID: 0}
   button: {fileID: 1692003841}
-  yes: 0
 --- !u!1 &1699339394
 GameObject:
   m_ObjectHideFlags: 0
@@ -11171,9 +11114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 682638347}
+  objectpictueres: {fileID: 0}
   button: {fileID: 1789620347}
-  yes: 0
 --- !u!114 &1789620350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11486,9 +11428,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1494835446}
+  objectpictueres: {fileID: 0}
   button: {fileID: 1821009320}
-  yes: 0
 --- !u!1 &1841614253
 GameObject:
   m_ObjectHideFlags: 0
@@ -11671,9 +11612,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1174445191}
+  objectpictueres: {fileID: 0}
   button: {fileID: 1841614253}
-  yes: 0
 --- !u!1 &1842650083
 GameObject:
   m_ObjectHideFlags: 0
@@ -11726,9 +11666,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 544074196}
+  objectpictueres: {fileID: 0}
   button: {fileID: 1842650083}
-  yes: 0
 --- !u!114 &1842650086
 MonoBehaviour:
   m_ObjectHideFlags: 0

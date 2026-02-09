@@ -8,10 +8,9 @@ public class ButtonHandler : MonoBehaviour
 {
     [SerializeField] GameObject Ingredients;
     [SerializeField] GameObject Button;
-    [SerializeField] TextMeshProUGUI burgeuitext;
     [SerializeField] GameObject Ingredientsbigmac;
-    [SerializeField] GameObject Button2;
     [SerializeField] GameObject Ingredientsqpwc;
+    [SerializeField] TextMeshProUGUI uitext;
     public void playGame()
     {
         SceneManager.LoadSceneAsync(1);
@@ -26,38 +25,28 @@ public class ButtonHandler : MonoBehaviour
     }
     public void goIngredients()
     {
-        if (burgeuitext != null &&
-            burgeuitext.text.ToLower().Contains("el maco"))
+        if (uitext != null &&
+            uitext.text.ToLower().Contains("el maco"))
         {
             Debug.Log("el macon resepti");
             Ingredients.SetActive(true);
             Button.SetActive(false);
         }
-        if (burgeuitext != null &&
-           burgeuitext.text.ToLower().Contains("big mac"))
+        if (uitext != null &&
+           uitext.text.ToLower().Contains("big mac"))
         {
             Debug.Log("big macin resepti");
             Ingredientsbigmac.SetActive(true);
             Button.SetActive(false);
         }
-        if (burgeuitext != null &&
-           burgeuitext.text.ToLower().Contains("quarter pounder with cheese"))
+        if (uitext != null &&
+           uitext.text.ToLower().Contains("quarter pounder with cheese"))
         {
             Debug.Log("qpwc resepti");
             Ingredientsqpwc.SetActive(true);
             Button.SetActive(false);
 
         }
-        // Start is called before the first frame update
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
+     
     }
 }
