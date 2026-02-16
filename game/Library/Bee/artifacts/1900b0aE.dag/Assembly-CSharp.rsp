@@ -356,12 +356,16 @@
 "Assets/Scripts/anim.cs"
 "Assets/Scripts/ButtonHandler.cs"
 "Assets/Scripts/checkitem.cs"
+"Assets/Scripts/checkitembigmacrecipe.cs"
 "Assets/Scripts/checkitemcheck.cs"
+"Assets/Scripts/checkitemelmacorecipe.cs"
+"Assets/Scripts/checkitemqpwc.cs"
 "Assets/Scripts/game.cs"
 "Assets/Scripts/gamee.cs"
 "Assets/Scripts/Grabitem.cs"
 "Assets/Scripts/IngredienButton.cs"
 "Assets/Scripts/itemcheck.cs"
+"Assets/Scripts/Swapitem.cs"
 "Assets/Scripts/textsystem.cs"
 -langversion:9.0
 
