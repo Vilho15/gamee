@@ -175,8 +175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectpictueres: {fileID: 0}
-  button: {fileID: 19758976}
 --- !u!114 &19758979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1029,8 +1027,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectpictueres: {fileID: 0}
-  button: {fileID: 63983976}
 --- !u!114 &63983979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1298,8 +1294,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectpictueres: {fileID: 0}
-  button: {fileID: 117031963}
 --- !u!114 &117031966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2845,8 +2839,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectpictueres: {fileID: 0}
-  button: {fileID: 245144983}
 --- !u!114 &245144986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3833,8 +3825,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectpictueres: {fileID: 0}
-  button: {fileID: 389327703}
 --- !u!114 &389327706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4017,8 +4007,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectpictueres: {fileID: 0}
-  button: {fileID: 408928621}
 --- !u!114 &408928624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4687,8 +4675,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectpictueres: {fileID: 0}
-  button: {fileID: 625653999}
 --- !u!114 &625654002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4916,21 +4902,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
-  bigmac: {fileID: 1297208481}
-  uipanel: {fileID: 0}
-  wrongingredientsclicksrawimage: {fileID: 0}
-  forbiddenItems:
-  - {fileID: 1494835449}
-  - {fileID: 1733449624}
-  - {fileID: 69804407}
-  - {fileID: 1254219646}
-  - {fileID: 682638348}
-  - {fileID: 1934354893}
-  - {fileID: 1699339395}
-  whatburgertext: {fileID: 0}
-  wrongingredientsclickstext: {fileID: 0}
-  wrongIngredientClicks: 0
 --- !u!1 &650025941
 GameObject:
   m_ObjectHideFlags: 0
@@ -7078,6 +7049,7 @@ GameObject:
   - component: {fileID: 1064595897}
   - component: {fileID: 1064595898}
   - component: {fileID: 1064595899}
+  - component: {fileID: 1064595900}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -7227,21 +7199,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1264876108}
-  bigmac: {fileID: 1297208481}
-  uipanel: {fileID: 0}
-  wrongingredientsclicksrawimage: {fileID: 0}
-  forbiddenItems:
-  - {fileID: 1821009321}
-  - {fileID: 408928622}
-  - {fileID: 117031964}
-  - {fileID: 1188787772}
-  - {fileID: 1789620348}
-  - {fileID: 63983977}
-  - {fileID: 1699339395}
-  whatburgertext: {fileID: 0}
-  wrongingredientsclickstext: {fileID: 0}
-  wrongIngredientClicks: 0
 --- !u!114 &1064595896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7268,24 +7225,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de305e5c9aa54ec4397b1f7e0ab3e0dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forbiddenItems:
-  - {fileID: 1821009321}
-  - {fileID: 408928622}
-  - {fileID: 1841614254}
-  - {fileID: 117031964}
-  - {fileID: 1188787772}
-  - {fileID: 1789620348}
-  - {fileID: 63983977}
-  - {fileID: 1109538272}
-  - {fileID: 389327704}
-  burgeuitext: {fileID: 738539359}
-  ui: {fileID: 2141579450}
-  button: {fileID: 1264876108}
-  bigmac: {fileID: 1851671170}
-  wrongIngredientClicks: 0
-  feedbackText: {fileID: 182762828}
-  maxWrongClicks: 7
-  text: {fileID: 654677428}
 --- !u!114 &1064595898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7298,24 +7237,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24c44a5394fe13a46b6c709d24774eb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forbiddenItems:
-  - {fileID: 1821009321}
-  - {fileID: 117031964}
-  - {fileID: 1188787772}
-  - {fileID: 625654000}
-  - {fileID: 1789620348}
-  - {fileID: 63983977}
-  - {fileID: 1109538272}
-  - {fileID: 1117396263}
-  - {fileID: 19758977}
-  burgeuitext: {fileID: 738539359}
-  elmaco: {fileID: 1847350314}
-  ui: {fileID: 2141579450}
-  wrongIngredientClicks: 0
-  maxWrongClicks: 7
-  text: {fileID: 654677428}
-  feedbackText: {fileID: 182762828}
-  button: {fileID: 1264876108}
 --- !u!114 &1064595899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7333,6 +7254,27 @@ MonoBehaviour:
   Ingredientsbigmac: {fileID: 212075544}
   Ingredientsqpwc: {fileID: 170285656}
   uitext: {fileID: 0}
+--- !u!114 &1064595900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064595889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3023bda19f2df84e82faf81d4ae795c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forbiddenItems: []
+  whatburgertext: {fileID: 0}
+  ui: {fileID: 0}
+  button: {fileID: 0}
+  bigmac: {fileID: 0}
+  feedbackText: {fileID: 0}
+  text: {fileID: 0}
+  burgerStack: {fileID: 1064595894}
+  stackHeight: 0.2
 --- !u!1 &1074349800
 GameObject:
   m_ObjectHideFlags: 0
@@ -7457,8 +7399,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectpictueres: {fileID: 0}
-  button: {fileID: 1109538271}
 --- !u!114 &1109538276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7641,8 +7581,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectpictueres: {fileID: 0}
-  button: {fileID: 1117396262}
 --- !u!114 &1117396265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8178,8 +8116,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectpictueres: {fileID: 0}
-  button: {fileID: 1188787771}
 --- !u!114 &1188787774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8916,8 +8852,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectpictueres: {fileID: 0}
-  button: {fileID: 1275843895}
 --- !u!1 &1290360306
 GameObject:
   m_ObjectHideFlags: 0
@@ -9263,8 +9197,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectpictueres: {fileID: 0}
-  button: {fileID: 1403164904}
 --- !u!114 &1403164907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10169,8 +10101,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectpictueres: {fileID: 0}
-  button: {fileID: 1663558877}
 --- !u!114 &1663558880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10483,8 +10413,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectpictueres: {fileID: 0}
-  button: {fileID: 1692003841}
 --- !u!1 &1699339394
 GameObject:
   m_ObjectHideFlags: 0
@@ -11114,8 +11042,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectpictueres: {fileID: 0}
-  button: {fileID: 1789620347}
 --- !u!114 &1789620350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11428,8 +11354,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectpictueres: {fileID: 0}
-  button: {fileID: 1821009320}
 --- !u!1 &1841614253
 GameObject:
   m_ObjectHideFlags: 0
@@ -11612,8 +11536,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectpictueres: {fileID: 0}
-  button: {fileID: 1841614253}
 --- !u!1 &1842650083
 GameObject:
   m_ObjectHideFlags: 0
@@ -11666,8 +11588,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectpictueres: {fileID: 0}
-  button: {fileID: 1842650083}
 --- !u!114 &1842650086
 MonoBehaviour:
   m_ObjectHideFlags: 0

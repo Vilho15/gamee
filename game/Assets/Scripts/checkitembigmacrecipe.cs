@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 
 public class CheckItembigmacrecipe : MonoBehaviour
 {
-    [SerializeField] GameObject button;
+   
     [SerializeField] GameObject bigmac;
     [SerializeField] GameObject uipanel;
     [SerializeField] GameObject wrongingredientsclicksrawimage;

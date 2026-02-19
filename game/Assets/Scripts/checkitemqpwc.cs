@@ -4,19 +4,27 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class checkitemqpwc: MonoBehaviour
+public class checkitemqpwc : MonoBehaviour
 {
+    [Header("Recipe Settings")]
     [SerializeField] List<Transform> forbiddenItems;
-    [SerializeField] TextMeshProUGUI burgeuitext;
-    private bool bigMacInitialized = false;
-    [SerializeField] GameObject ui;
-    [SerializeField] GameObject button;
-    [SerializeField] GameObject bigmac;
-    [SerializeField] private int wrongIngredientClicks = 0;
+    [SerializeField] private TextMeshProUGUI whatburgertext;
+
+    [Header("UI")]
+    [SerializeField] private GameObject ui;
+    [SerializeField] private GameObject button;
+    [SerializeField] private GameObject bigmac;
     [SerializeField] private TextMeshProUGUI feedbackText;
-    [SerializeField] private int maxWrongClicks = 7;
-    [SerializeField] GameObject text;
+    [SerializeField] private GameObject text;
+
+    [Header("Stack Settings")]
+    [SerializeField] private Transform burgerStack;   
+    [SerializeField] private float stackHeight = 0.2f; 
+
+    private int currentStackIndex = 0;
+    private int wrongIngredientClicks = 0;
     private List<string> addedIngredients = new List<string>();
+
     public static List<string> QpwcRecipe = new List<string>()
     {
         "Bottom Bun",
@@ -27,30 +35,27 @@ public class checkitemqpwc: MonoBehaviour
         "ketchup",
         "Senap",
         "TopBun"
-
-
     };
+
+
+
     void ShowMessage(string message)
     {
-        text.SetActive(true);
-
         if (feedbackText != null)
         {
             text.SetActive(true);
             feedbackText.text = message;
         }
-        text.SetActive(true);
 
-        Debug.Log(message); // voit poistaa jos et halua konsoliin
+        Debug.Log(message);
     }
 
-   
     public void TryAddIngredient()
     {
-        if (burgeuitext == null || !burgeuitext.text.ToLower().Contains("quarter pounder with cheese"))
+        if (whatburgertext == null ||
+            !whatburgertext.text.ToLower().Contains("quarter pounder with cheese"))
         {
-           
-            Debug.Log("?? Valittuna ei ole qpwr – ainesosia ei käsitellä");
+            Debug.Log("Valittuna ei ole qpwc – ainesosia ei käsitellä");
             return;
         }
 
@@ -58,7 +63,7 @@ public class checkitemqpwc: MonoBehaviour
 
         if (clicked == null)
         {
-            Debug.LogError("? Klikattua UI-elementtiä ei löytynyt");
+            Debug.LogError("Klikattua UI-elementtiä ei löytynyt");
             return;
         }
 
@@ -67,69 +72,68 @@ public class checkitemqpwc: MonoBehaviour
 
         Debug.Log($"Klikattiin nappia: {ingredientName}");
 
-        // ?? 1?? KIELLETTY TARKISTUS
+  
         foreach (Transform forbidden in forbiddenItems)
         {
-            if (forbidden == clickedTransform)
+            if (forbidden.name == ingredientName)
             {
                 wrongIngredientClicks++;
-                Debug.Log($"? Et voi lisätä tätä Big Maciin: {ingredientName}");
+                Debug.Log($"Et voi lisätä tätä qpwc: {ingredientName}");
                 return;
             }
         }
 
-        // ?? 2?? ONKO JO LISÄTTY
         if (addedIngredients.Contains(ingredientName))
         {
-            Debug.Log($"?? {ingredientName} on jo lisätty Big Maciin");
+            Debug.Log($"{ingredientName} on jo lisätty");
             return;
         }
 
-        // ?? 3?? LISÄTÄÄN AINESOSA
+        // Lisätään listaan
         addedIngredients.Add(ingredientName);
-        Debug.Log($"? Lisätty qpwr: {ingredientName}");
+        Debug.Log($"Lisätty qpwc: {ingredientName}");
 
-        // ?? 4?? ONKO KAIKKI LISÄTTY
+    
+        clickedTransform.SetParent(burgerStack);
+
+        clickedTransform.localPosition = new Vector3(
+            0,
+            currentStackIndex * stackHeight,
+            0
+        );
+
+        currentStackIndex++;
+      
         if (addedIngredients.Count >= QpwcRecipe.Count)
         {
-            Debug.Log("?? KAIKKI ainesosat lisätty – qpwr on valmis!");
+            Debug.Log("KAIKKI ainesosat lisätty – qpwc on valmis!");
             LogPerformance();
             bigmac.SetActive(true);
             ui.SetActive(true);
         }
     }
+
     void LogPerformance()
     {
         if (wrongIngredientClicks == 0)
         {
-            ShowMessage("?? Täydellinen suoritus – ei virheitä!");
+            ShowMessage("Täydellinen suoritus – ei virheitä!");
         }
         else if (wrongIngredientClicks == 1)
         {
-           ShowMessage("?? Teit yhden virheen");
+            ShowMessage("Teit yhden virheen");
         }
         else if (wrongIngredientClicks == 2)
         {
-            ShowMessage("?? Teit kaksi virhettä");
+            ShowMessage("Teit kaksi virhettä");
         }
         else if (wrongIngredientClicks == 3)
         {
-            ShowMessage("?? Teit kolme virhettä");
+            ShowMessage("Teit kolme virhettä");
         }
         else
         {
-            ShowMessage("?? Teit neljä tai enemmän virheitä");
+            ShowMessage("Teit neljä tai enemmän virheitä");
         }
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

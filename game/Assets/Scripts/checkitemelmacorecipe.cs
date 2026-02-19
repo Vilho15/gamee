@@ -7,15 +7,12 @@ using UnityEngine.EventSystems;
 public class checkitemelmacorecipe: MonoBehaviour
 {
     [SerializeField] List<Transform> forbiddenItems;
-    [SerializeField] TextMeshProUGUI burgeuitext;
-    private bool bigMacInitialized = false;
+    [SerializeField] TextMeshProUGUI whatportionuitext;
     [SerializeField] GameObject elmaco;
-    [SerializeField] GameObject ui;
-    [SerializeField] private int wrongIngredientClicks = 0;
-    [SerializeField] private int maxWrongClicks = 7;
-    [SerializeField] GameObject text;
+    [SerializeField] GameObject endscreenuipanel;
+    [SerializeField] GameObject textbox;
     [SerializeField] private TextMeshProUGUI feedbackText;
-    [SerializeField] GameObject button;
+    [SerializeField] private int wrongIngredientClicks = 0;
     private List<string> addedIngredients = new List<string>();
     public static List<string> elmacoRecipe = new List<string>()
     {
@@ -34,7 +31,7 @@ public class checkitemelmacorecipe: MonoBehaviour
     public void TryAddIngredient()
     {
         
-        if (burgeuitext == null || !burgeuitext.text.ToLower().Contains("el maco"))
+        if (whatportionuitext == null || !whatportionuitext.text.ToLower().Contains("el maco"))
         {
         
             Debug.Log("?? Valittuna ei ole el maco  – ainesosia ei käsitellä");
@@ -83,21 +80,21 @@ public class checkitemelmacorecipe: MonoBehaviour
             Debug.Log("?? KAIKKI ainesosat lisätty – el maco on valmis!");
             LogPerformance();
             elmaco.SetActive(true);
-            ui.SetActive(true);
+            endscreenuipanel.SetActive(true);
         }
     }
     
 
     void ShowMessage(string message)
     {
-        text.SetActive(true);
+        textbox.SetActive(true);
 
         if (feedbackText != null)
         {
-            text.SetActive(true);
+            textbox.SetActive(true);
             feedbackText.text = message;
         }
-        text.SetActive(true);
+        textbox.SetActive(true);
 
       
     }

@@ -62,19 +62,13 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\textsystem.cs" />
     <Compile Include="Assets\grabitem.cs" />
-    <Compile Include="Assets\Scripts\checkitemcheck.cs" />
-    <Compile Include="Assets\Scripts\anim.cs" />
-    <Compile Include="Assets\Scripts\checkitem.cs" />
     <Compile Include="Assets\Scripts\checkitembigmacrecipe.cs" />
     <Compile Include="Assets\Scripts\IngredienButton.cs" />
     <Compile Include="Assets\Scripts\checkitemelmacorecipe.cs" />
-    <Compile Include="Assets\Scripts\game.cs" />
     <Compile Include="Assets\Scripts\ButtonHandler.cs" />
     <Compile Include="Assets\Scripts\Grabitem.cs" />
     <Compile Include="Assets\Scripts\checkitemqpwc.cs" />
     <Compile Include="Assets\Scripts\Swapitem.cs" />
-    <Compile Include="Assets\Scripts\gamee.cs" />
-    <Compile Include="Assets\Scripts\itemcheck.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
