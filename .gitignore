@@ -45,10 +45,12 @@ UserSettings/
 sysinfo.txt
 
 # =========================
-# SQLite (jos käytössä)
+# SQLite 
 # =========================
 *-wal
 *-shm
+*.db
+*-transactions.db
 
 # =========================
 # OS files
