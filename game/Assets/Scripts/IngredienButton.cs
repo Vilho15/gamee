@@ -4,10 +4,14 @@ using UnityEngine.SceneManagement;
 public class IngredientButton : MonoBehaviour
 {
     public string ingredientName;
-    public CheckItembigmacrecipe checkItem;
+    public CheckItembigmacrecipe checkItembigmacrecipe;
+    public checkitemelmacorecipe checkitemelmacorecipe;
+    public checkitemqpwc checkitemqpwc;
 
     public void OnClick()
     {
-        checkItem.TryAddIngredient();
+        checkItembigmacrecipe.TryAddIngredient();
+        checkitemqpwc.TryAddIngredient();
+        checkitemelmacorecipe.TryAddIngredient();
     }
 }
