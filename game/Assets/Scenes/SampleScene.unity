@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 19758981}
   - component: {fileID: 19758980}
   - component: {fileID: 19758979}
-  - component: {fileID: 19758978}
   m_Layer: 5
   m_Name: Senap
   m_TagString: Untagged
@@ -163,18 +162,6 @@ RectTransform:
   m_AnchoredPosition: {x: -698, y: -125}
   m_SizeDelta: {x: 38.7619, y: 85.4909}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &19758978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 19758976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &19758979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,55 +205,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 19758980}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 19758978}
-        m_TargetAssemblyTypeName: game, Assembly-CSharp
-        m_MethodName: ogame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: itemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: checkitemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &19758980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -439,111 +378,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 20577521}
   m_CullTransparentMesh: 1
---- !u!1 &22188653
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 22188657}
-  - component: {fileID: 22188656}
-  - component: {fileID: 22188655}
-  - component: {fileID: 22188654}
-  m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &22188654
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22188653}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &22188655
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22188653}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &22188656
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22188653}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &22188657
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22188653}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 945, y: 442, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &48362651
 GameObject:
   m_ObjectHideFlags: 0
@@ -1092,7 +926,6 @@ GameObject:
   - component: {fileID: 63983981}
   - component: {fileID: 63983980}
   - component: {fileID: 63983979}
-  - component: {fileID: 63983978}
   m_Layer: 5
   m_Name: ' Salt'
   m_TagString: ForbiddenIngredient
@@ -1120,18 +953,6 @@ RectTransform:
   m_AnchoredPosition: {x: 918.3, y: -111}
   m_SizeDelta: {x: 38.7619, y: 85.4909}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &63983978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 63983976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &63983979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1175,55 +996,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 63983980}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 63983978}
-        m_TargetAssemblyTypeName: game, Assembly-CSharp
-        m_MethodName: ogame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: itemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: checkitemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &63983980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1359,7 +1132,6 @@ GameObject:
   - component: {fileID: 117031968}
   - component: {fileID: 117031967}
   - component: {fileID: 117031966}
-  - component: {fileID: 117031965}
   m_Layer: 5
   m_Name: ' french fries'
   m_TagString: ForbiddenIngredient
@@ -1387,18 +1159,6 @@ RectTransform:
   m_AnchoredPosition: {x: 462, y: -414}
   m_SizeDelta: {x: 38.7619, y: 85.4909}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &117031965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 117031963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &117031966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1442,55 +1202,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 117031967}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 117031965}
-        m_TargetAssemblyTypeName: game, Assembly-CSharp
-        m_MethodName: ogame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: itemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: checkitemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &117031967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2935,7 +2647,6 @@ GameObject:
   - component: {fileID: 245144988}
   - component: {fileID: 245144987}
   - component: {fileID: 245144986}
-  - component: {fileID: 245144985}
   m_Layer: 5
   m_Name: ' Bottom bun'
   m_TagString: Untagged
@@ -2963,18 +2674,6 @@ RectTransform:
   m_AnchoredPosition: {x: -73, y: -422.6}
   m_SizeDelta: {x: 38.7619, y: 85.4909}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &245144985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 245144983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &245144986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3018,55 +2717,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 245144987}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 245144985}
-        m_TargetAssemblyTypeName: game, Assembly-CSharp
-        m_MethodName: ogame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: itemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: checkitemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &245144987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3921,7 +3572,6 @@ GameObject:
   - component: {fileID: 389327708}
   - component: {fileID: 389327707}
   - component: {fileID: 389327706}
-  - component: {fileID: 389327705}
   m_Layer: 5
   m_Name: ' Sauce'
   m_TagString: Untagged
@@ -3949,18 +3599,6 @@ RectTransform:
   m_AnchoredPosition: {x: 524.6, y: -102}
   m_SizeDelta: {x: 38.7619, y: 85.4909}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &389327705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 389327703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &389327706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4004,55 +3642,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 389327707}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 389327705}
-        m_TargetAssemblyTypeName: game, Assembly-CSharp
-        m_MethodName: ogame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: itemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: checkitemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &389327707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4739,7 +4329,6 @@ GameObject:
   - component: {fileID: 625654004}
   - component: {fileID: 625654003}
   - component: {fileID: 625654002}
-  - component: {fileID: 625654001}
   m_Layer: 5
   m_Name: ' Pickeled Cucumber'
   m_TagString: Untagged
@@ -4767,18 +4356,6 @@ RectTransform:
   m_AnchoredPosition: {x: 611, y: -422.6}
   m_SizeDelta: {x: 38.7619, y: 85.4909}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &625654001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 625653999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &625654002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4822,55 +4399,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 625654003}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 625654001}
-        m_TargetAssemblyTypeName: game, Assembly-CSharp
-        m_MethodName: ogame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: itemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: checkitemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &625654003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4919,7 +4448,6 @@ GameObject:
   m_Component:
   - component: {fileID: 637589503}
   - component: {fileID: 637589502}
-  - component: {fileID: 637589504}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -4994,18 +4522,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &637589504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637589501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01fb2cc608c5f7f4a889c9b2a3f3ae7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &650025941
 GameObject:
   m_ObjectHideFlags: 0
@@ -7290,6 +6806,7 @@ GameObject:
   - component: {fileID: 1064595900}
   - component: {fileID: 1064595901}
   - component: {fileID: 1064595902}
+  - component: {fileID: 1064595903}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -7504,6 +7021,22 @@ MonoBehaviour:
   whatburgertext: {fileID: 0}
   wrongingredientsclickstext: {fileID: 0}
   wrongIngredientClicks: 0
+--- !u!114 &1064595903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064595889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d8bf98afd19bc42b887172e3d0a964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientName: 
+  checkItembigmacrecipe: {fileID: 1064595902}
+  checkitemelmacorecipe: {fileID: 1064595901}
+  checkitemqpwc: {fileID: 1064595900}
 --- !u!1 &1074349800
 GameObject:
   m_ObjectHideFlags: 0
@@ -7588,7 +7121,6 @@ GameObject:
   - component: {fileID: 1109538278}
   - component: {fileID: 1109538277}
   - component: {fileID: 1109538276}
-  - component: {fileID: 1109538275}
   m_Layer: 5
   m_Name: ' Bun2'
   m_TagString: Untagged
@@ -7616,18 +7148,6 @@ RectTransform:
   m_AnchoredPosition: {x: 351, y: -109}
   m_SizeDelta: {x: 38.7619, y: 85.4909}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1109538275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1109538271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1109538276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7671,55 +7191,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1109538277}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1109538275}
-        m_TargetAssemblyTypeName: game, Assembly-CSharp
-        m_MethodName: ogame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: itemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: checkitemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1109538277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7770,7 +7242,6 @@ GameObject:
   - component: {fileID: 1117396267}
   - component: {fileID: 1117396266}
   - component: {fileID: 1117396265}
-  - component: {fileID: 1117396264}
   m_Layer: 5
   m_Name: ketchup
   m_TagString: Untagged
@@ -7798,18 +7269,6 @@ RectTransform:
   m_AnchoredPosition: {x: 196, y: -102}
   m_SizeDelta: {x: 38.7619, y: 85.4909}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1117396264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1117396262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1117396265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7853,55 +7312,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1117396266}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1117396264}
-        m_TargetAssemblyTypeName: game, Assembly-CSharp
-        m_MethodName: ogame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: itemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: checkitemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1117396266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8305,7 +7716,6 @@ GameObject:
   - component: {fileID: 1188787776}
   - component: {fileID: 1188787775}
   - component: {fileID: 1188787774}
-  - component: {fileID: 1188787773}
   m_Layer: 5
   m_Name: ' fish'
   m_TagString: ForbiddenIngredient
@@ -8333,18 +7743,6 @@ RectTransform:
   m_AnchoredPosition: {x: 300, y: -422.6}
   m_SizeDelta: {x: 38.7619, y: 85.4909}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1188787773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1188787771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1188787774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8388,55 +7786,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1188787775}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1188787773}
-        m_TargetAssemblyTypeName: game, Assembly-CSharp
-        m_MethodName: ogame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: itemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: checkitemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1188787775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8911,7 +8261,6 @@ GameObject:
   - component: {fileID: 1275843899}
   - component: {fileID: 1275843898}
   - component: {fileID: 1275843897}
-  - component: {fileID: 1275843900}
   m_Layer: 5
   m_Name: ' Beef'
   m_TagString: Untagged
@@ -8982,55 +8331,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1275843898}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1275843900}
-        m_TargetAssemblyTypeName: game, Assembly-CSharp
-        m_MethodName: ogame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: itemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: checkitemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1275843898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9069,18 +8370,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1275843895}
   m_CullTransparentMesh: 1
---- !u!114 &1275843900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1275843895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1277374047
 GameObject:
   m_ObjectHideFlags: 0
@@ -9745,11 +9034,8 @@ GameObject:
   - component: {fileID: 1494835449}
   - component: {fileID: 1494835448}
   - component: {fileID: 1494835447}
-  - component: {fileID: 1494835451}
   - component: {fileID: 1494835450}
-  - component: {fileID: 1494835452}
   - component: {fileID: 1494835453}
-  - component: {fileID: 1494835454}
   m_Layer: 5
   m_Name: Cucumber
   m_TagString: Untagged
@@ -9863,39 +9149,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1494835451
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1494835446}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 440bb50256f116241a06f0fd060532d7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1494835452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1494835446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4e92ac0f16ea3e4ba33c073923008d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1494835453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9906,18 +9159,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85f69bf9d3bf43740914f053f5e647b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1494835454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1494835446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97fc70d9e1719454382d30ea56bdf2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1515903832
@@ -10334,7 +9575,6 @@ GameObject:
   - component: {fileID: 1663558882}
   - component: {fileID: 1663558881}
   - component: {fileID: 1663558880}
-  - component: {fileID: 1663558879}
   m_Layer: 5
   m_Name: ' TopBun'
   m_TagString: Untagged
@@ -10362,18 +9602,6 @@ RectTransform:
   m_AnchoredPosition: {x: 905, y: -417}
   m_SizeDelta: {x: 38.7619, y: 85.4909}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1663558879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663558877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1663558880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10417,55 +9645,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1663558881}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1663558879}
-        m_TargetAssemblyTypeName: game, Assembly-CSharp
-        m_MethodName: ogame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: itemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: checkitemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1663558881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10516,7 +9696,6 @@ GameObject:
   - component: {fileID: 1692003845}
   - component: {fileID: 1692003844}
   - component: {fileID: 1692003843}
-  - component: {fileID: 1692003846}
   m_Layer: 5
   m_Name: ' Cheese'
   m_TagString: Untagged
@@ -10587,55 +9766,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1692003844}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1692003846}
-        m_TargetAssemblyTypeName: game, Assembly-CSharp
-        m_MethodName: ogame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: itemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: checkitemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1692003844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10674,18 +9805,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692003841}
   m_CullTransparentMesh: 1
---- !u!114 &1692003846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1692003841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1699339394
 GameObject:
   m_ObjectHideFlags: 0
@@ -11275,7 +10394,6 @@ GameObject:
   - component: {fileID: 1789620352}
   - component: {fileID: 1789620351}
   - component: {fileID: 1789620350}
-  - component: {fileID: 1789620349}
   m_Layer: 5
   m_Name: ' knife'
   m_TagString: ForbiddenIngredient
@@ -11303,18 +10421,6 @@ RectTransform:
   m_AnchoredPosition: {x: 757, y: -422.6}
   m_SizeDelta: {x: 38.7619, y: 85.4909}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1789620349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1789620347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1789620350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11358,55 +10464,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1789620351}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1789620349}
-        m_TargetAssemblyTypeName: game, Assembly-CSharp
-        m_MethodName: ogame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: itemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: checkitemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1789620351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11607,7 +10665,6 @@ GameObject:
   - component: {fileID: 1841614257}
   - component: {fileID: 1841614256}
   - component: {fileID: 1841614255}
-  - component: {fileID: 1841614258}
   m_Layer: 5
   m_Name: '  Lettuce'
   m_TagString: Untagged
@@ -11679,45 +10736,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1841614258}
-        m_TargetAssemblyTypeName: game, Assembly-CSharp
-        m_MethodName: ogame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1064595903}
         m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
         m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: itemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: checkitemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11765,18 +10786,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841614253}
   m_CullTransparentMesh: 1
---- !u!114 &1841614258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1841614253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1842650083
 GameObject:
   m_ObjectHideFlags: 0
@@ -11789,7 +10798,6 @@ GameObject:
   - component: {fileID: 1842650088}
   - component: {fileID: 1842650087}
   - component: {fileID: 1842650086}
-  - component: {fileID: 1842650085}
   m_Layer: 5
   m_Name: ' Onion'
   m_TagString: Untagged
@@ -11817,18 +10825,6 @@ RectTransform:
   m_AnchoredPosition: {x: 752.9001, y: -108}
   m_SizeDelta: {x: 38.7619, y: 85.4909}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1842650085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1842650083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a88d528589bfd9445a0b128c5da83ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1842650086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11872,55 +10868,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1842650087}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1842650085}
-        m_TargetAssemblyTypeName: game, Assembly-CSharp
-        m_MethodName: ogame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: itemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: checkitemcheck, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1842650087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14094,7 +13042,6 @@ SceneRoots:
   - {fileID: 967731347}
   - {fileID: 211627099}
   - {fileID: 708389346}
-  - {fileID: 22188657}
   - {fileID: 1277374051}
   - {fileID: 696767019}
   - {fileID: 1954414446}
