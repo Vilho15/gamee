@@ -12,7 +12,6 @@ public class checkitemelmacorecipe: MonoBehaviour
     [SerializeField] GameObject elmaco;
     [SerializeField] GameObject endscreenuipanel;
     [SerializeField] GameObject textbox;
-    [SerializeField] string textbox1;
     [SerializeField] private TextMeshProUGUI feedbackText;
     [SerializeField] private int wrongIngredientClicks = 0;
     private List<string> addedIngredients = new List<string>();
@@ -57,11 +56,7 @@ public class checkitemelmacorecipe: MonoBehaviour
         {
             Debug.Log("klikattiin nappia joka vie menuun");
         }
-        if(textbox1  == "salsa")
-        {
-
-            Debug.Log("klikattiin nappia joka vie menuun");
-        }
+     
       
         foreach (Transform forbidden in forbiddenItems)
         {

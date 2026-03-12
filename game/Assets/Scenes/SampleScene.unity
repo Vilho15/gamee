@@ -6974,10 +6974,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forbiddenItems: []
-  whatburgertext: {fileID: 0}
-  ui: {fileID: 0}
-  button: {fileID: 0}
-  bigmac: {fileID: 0}
+  whatburgertext: {fileID: 738539359}
+  endscreenuipanel: {fileID: 2141579450}
+  qpwc: {fileID: 0}
   feedbackText: {fileID: 0}
   text: {fileID: 0}
   burgerStack: {fileID: 1064595894}
@@ -6995,11 +6994,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forbiddenItems: []
-  whatportionuitext: {fileID: 0}
+  whatportionuitext: {fileID: 738539359}
   elmaco: {fileID: 0}
-  endscreenuipanel: {fileID: 0}
+  endscreenuipanel: {fileID: 2141579450}
   textbox: {fileID: 0}
-  textbox1: salsa
   feedbackText: {fileID: 0}
   wrongIngredientClicks: 0
 --- !u!114 &1064595902
@@ -8623,7 +8621,7 @@ GameObject:
   - component: {fileID: 1297208484}
   - component: {fileID: 1297208483}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: Big mac
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10919,7 +10917,7 @@ GameObject:
   - component: {fileID: 1847350317}
   - component: {fileID: 1847350316}
   m_Layer: 5
-  m_Name: RawImage (5)
+  m_Name: el maco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11125,7 +11123,7 @@ GameObject:
   - component: {fileID: 1851671173}
   - component: {fileID: 1851671172}
   m_Layer: 5
-  m_Name: RawImage (3)
+  m_Name: qpwc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12696,7 +12694,7 @@ GameObject:
   - component: {fileID: 2141579453}
   - component: {fileID: 2141579452}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: endscreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

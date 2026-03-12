@@ -11,9 +11,8 @@ public class checkitemqpwc : MonoBehaviour
     [SerializeField] private TextMeshProUGUI whatburgertext;
 
     [Header("UI")]
-    [SerializeField] private GameObject ui;
-    [SerializeField] private GameObject button;
-    [SerializeField] private GameObject bigmac;
+    [SerializeField] private GameObject endscreenuipanel;
+    [SerializeField] private GameObject qpwc;
     [SerializeField] private TextMeshProUGUI feedbackText;
     [SerializeField] private GameObject text;
 
@@ -89,7 +88,7 @@ public class checkitemqpwc : MonoBehaviour
             return;
         }
 
-        // Lis‰t‰‰n listaan
+       
         addedIngredients.Add(ingredientName);
         Debug.Log($"Lis‰tty qpwc: {ingredientName}");
 
@@ -108,8 +107,8 @@ public class checkitemqpwc : MonoBehaviour
         {
             Debug.Log("KAIKKI ainesosat lis‰tty ñ qpwc on valmis!");
             LogPerformance();
-            bigmac.SetActive(true);
-            ui.SetActive(true);
+            qpwc.SetActive(true);
+            endscreenuipanel.SetActive(true);
         }
     }
 
