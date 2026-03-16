@@ -13,6 +13,11 @@ public class CheckItembigmacrecipe : MonoBehaviour
     [SerializeField] GameObject wrongingredientsclicksrawimage;
     [SerializeField] List<Transform> forbiddenItems;
     [SerializeField] TextMeshProUGUI whatburgertext;
+    [Header("Stack Settings")]
+    [SerializeField] private Transform burgerStack;
+    [SerializeField] private float stackHeight = 0.2f;
+
+    private int currentStackIndex = 0;
     [SerializeField] private TextMeshProUGUI wrongingredientsclickstext;
     [SerializeField] private int wrongIngredientClicks = 0;
     private List<string> addedIngredients = new List<string>();
@@ -63,7 +68,7 @@ public class CheckItembigmacrecipe : MonoBehaviour
 
         Debug.Log($"Klikattiin nappia: {ingredientName}");
 
-        // ?? 1?? KIELLETTY TARKISTUS
+     
         foreach (Transform forbidden in forbiddenItems)
         {
             if (forbidden == clickedTransform)
@@ -74,18 +79,26 @@ public class CheckItembigmacrecipe : MonoBehaviour
             }
         }
 
-        // ?? 2?? ONKO JO LISÄTTY
+      
         if (addedIngredients.Contains(ingredientName))
         {
             Debug.Log($"?? {ingredientName} on jo lisätty Big Maciin");
             return;
         }
 
-        // ?? 3?? LISÄTÄÄN AINESOSA
+       
         addedIngredients.Add(ingredientName);
         Debug.Log($"? Lisätty Big Maciin: {ingredientName}");
+        clickedTransform.SetParent(burgerStack);
 
-        // ?? 4?? ONKO KAIKKI LISÄTTY
+        clickedTransform.localPosition = new Vector3(
+            0,
+            currentStackIndex * stackHeight,
+            0
+        );
+
+        currentStackIndex++;
+
         if (addedIngredients.Count >= bigMacRecipe.Count)
         {
             Debug.Log("?? KAIKKI ainesosat lisätty – Big Mac on valmis!");
@@ -105,7 +118,7 @@ public class CheckItembigmacrecipe : MonoBehaviour
         }
         wrongingredientsclicksrawimage.SetActive(true);
 
-        Debug.Log(message); // voit poistaa jos et halua konsoliin
+        Debug.Log(message);
     } 
     void LogPerformance()
     {

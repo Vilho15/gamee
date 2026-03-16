@@ -13,6 +13,10 @@ public class checkitemelmacorecipe: MonoBehaviour
     [SerializeField] GameObject endscreenuipanel;
     [SerializeField] GameObject textbox;
     [SerializeField] private TextMeshProUGUI feedbackText;
+    [Header("Stack Settings")]
+    [SerializeField] private Transform burgerStack;
+    [SerializeField] private float stackHeight = 0.2f;
+    private int currentStackIndex = 0;
     [SerializeField] private int wrongIngredientClicks = 0;
     private List<string> addedIngredients = new List<string>();
     public static List<string> elmacoRecipe = new List<string>()
@@ -79,8 +83,16 @@ public class checkitemelmacorecipe: MonoBehaviour
     
         addedIngredients.Add(ingredientName);
         Debug.Log($"? Lisätty el macoon: {ingredientName}");
+        clickedTransform.SetParent(burgerStack);
 
-        
+        clickedTransform.localPosition = new Vector3(
+            0,
+            currentStackIndex * stackHeight,
+            0
+        );
+
+        currentStackIndex++;
+
         if (addedIngredients.Count >= elmacoRecipe.Count)
         {
             Debug.Log("?? KAIKKI ainesosat lisätty – el maco on valmis!");
