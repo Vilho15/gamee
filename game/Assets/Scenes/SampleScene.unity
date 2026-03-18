@@ -7048,7 +7048,7 @@ MonoBehaviour:
   forbiddenItems: []
   whatburgertext: {fileID: 738539359}
   endscreenuipanel: {fileID: 2141579450}
-  qpwc: {fileID: 0}
+  qpwc: {fileID: 1851671170}
   feedbackText: {fileID: 0}
   text: {fileID: 0}
   burgerStack: {fileID: 1064595894}
@@ -7067,11 +7067,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forbiddenItems: []
   whatportionuitext: {fileID: 738539359}
-  elmaco: {fileID: 0}
+  elmaco: {fileID: 1847350314}
   endscreenuipanel: {fileID: 2141579450}
   textbox: {fileID: 0}
   feedbackText: {fileID: 0}
-  burgerStack: {fileID: 0}
+  burgerStack: {fileID: 1064595894}
   stackHeight: 0.2
   wrongIngredientClicks: 0
 --- !u!114 &1064595902
@@ -7086,12 +7086,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e33021cd2b1144fbde2901a2e99628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bigmac: {fileID: 0}
+  bigmac: {fileID: 1297208481}
   uipanel: {fileID: 0}
   wrongingredientsclicksrawimage: {fileID: 0}
   forbiddenItems: []
   whatburgertext: {fileID: 0}
-  burgerStack: {fileID: 0}
+  burgerStack: {fileID: 1064595894}
   stackHeight: 0.2
   wrongingredientsclickstext: {fileID: 0}
   wrongIngredientClicks: 0
