@@ -219,6 +219,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 19758982}
+        m_TargetAssemblyTypeName: Swapitem, Assembly-CSharp
+        m_MethodName: ogame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &19758980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1037,6 +1049,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 63983982}
+        m_TargetAssemblyTypeName: Swapitem, Assembly-CSharp
+        m_MethodName: ogame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &63983980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1261,6 +1285,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1064595903}
         m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
         m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 117031969}
+        m_TargetAssemblyTypeName: Swapitem, Assembly-CSharp
+        m_MethodName: ogame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2812,6 +2848,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 245144989}
+        m_TargetAssemblyTypeName: Swapitem, Assembly-CSharp
+        m_MethodName: ogame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &245144987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3764,6 +3812,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 389327709}
+        m_TargetAssemblyTypeName: Swapitem, Assembly-CSharp
+        m_MethodName: ogame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &389327707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3904,6 +3964,18 @@ MonoBehaviour:
       - m_Target: {fileID: 408928627}
         m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
         m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 408928628}
+        m_TargetAssemblyTypeName: Swapitem, Assembly-CSharp
+        m_MethodName: ogame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4554,6 +4626,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1064595903}
         m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
         m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 625654005}
+        m_TargetAssemblyTypeName: Swapitem, Assembly-CSharp
+        m_MethodName: ogame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7192,10 +7276,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bigmac: {fileID: 1297208481}
-  uipanel: {fileID: 0}
+  uipanel: {fileID: 2141579450}
   wrongingredientsclicksrawimage: {fileID: 0}
   forbiddenItems: []
-  whatburgertext: {fileID: 0}
+  whatburgertext: {fileID: 738539359}
   burgerStack: {fileID: 1064595894}
   stackHeight: 0.2
   wrongingredientsclickstext: {fileID: 0}
@@ -7384,6 +7468,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1109538279}
+        m_TargetAssemblyTypeName: Swapitem, Assembly-CSharp
+        m_MethodName: ogame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1109538277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7523,6 +7619,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1064595903}
         m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
         m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1117396268}
+        m_TargetAssemblyTypeName: Swapitem, Assembly-CSharp
+        m_MethodName: ogame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8024,6 +8132,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1064595903}
         m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
         m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1188787777}
+        m_TargetAssemblyTypeName: Swapitem, Assembly-CSharp
+        m_MethodName: ogame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8605,6 +8725,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1275843900}
+        m_TargetAssemblyTypeName: Swapitem, Assembly-CSharp
+        m_MethodName: ogame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1275843898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9142,6 +9274,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1064595903}
         m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
         m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1403164910}
+        m_TargetAssemblyTypeName: Swapitem, Assembly-CSharp
+        m_MethodName: ogame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9973,6 +10117,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1663558883}
+        m_TargetAssemblyTypeName: Swapitem, Assembly-CSharp
+        m_MethodName: ogame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1663558881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10112,6 +10268,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1064595903}
         m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
         m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1692003846}
+        m_TargetAssemblyTypeName: Swapitem, Assembly-CSharp
+        m_MethodName: ogame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10846,6 +11014,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1789620353}
+        m_TargetAssemblyTypeName: Swapitem, Assembly-CSharp
+        m_MethodName: ogame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1789620351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11171,6 +11351,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1841614258}
+        m_TargetAssemblyTypeName: Swapitem, Assembly-CSharp
+        m_MethodName: ogame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1841614256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11310,6 +11502,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1064595903}
         m_TargetAssemblyTypeName: IngredientButton, Assembly-CSharp
         m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1842650089}
+        m_TargetAssemblyTypeName: Swapitem, Assembly-CSharp
+        m_MethodName: ogame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
