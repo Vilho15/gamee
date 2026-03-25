@@ -20,7 +20,7 @@ public class grabitem : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            knife.transform.position = go.transform.position;
+            knife.transform.position = go.transform.position;    
         }
     
     }

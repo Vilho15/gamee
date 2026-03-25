@@ -10179,7 +10179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d75529995a7d9143bdd29aa2e39dad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectpictueres: {fileID: 0}
+  objectpictueres: {fileID: 890854304}
   button: {fileID: 1663558877}
 --- !u!1 &1692003841
 GameObject:
