@@ -92,17 +92,11 @@ public class checkitemqpwc : MonoBehaviour
         addedIngredients.Add(ingredientName);
         Debug.Log($"Lisätty qpwc: {ingredientName}");
 
-    
+
         clickedTransform.SetParent(burgerStack);
+        clickedTransform.localPosition = Vector3.zero;
+        clickedTransform.SetAsLastSibling();
 
-        clickedTransform.localPosition = new Vector3(
-            0,
-            currentStackIndex * stackHeight,
-            0
-        );
-
-        currentStackIndex++;
-      
         if (addedIngredients.Count >= QpwcRecipe.Count)
         {
             Debug.Log("KAIKKI ainesosat lisätty – qpwc on valmis!");
