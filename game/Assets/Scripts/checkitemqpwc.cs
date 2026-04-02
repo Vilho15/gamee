@@ -18,8 +18,9 @@ public class checkitemqpwc : MonoBehaviour
 
     [Header("Stack Settings")]
     [SerializeField] private Transform burgerStack;   
-    [SerializeField] private float stackHeight = 0.2f; 
+    [SerializeField] private float stackHeight = 0.2f;
 
+    [SerializeField] private List<GameObject> ingredientPrefabs;
     private int currentStackIndex = 0;
     private int wrongIngredientClicks = 0;
     private List<string> addedIngredients = new List<string>();
@@ -71,7 +72,7 @@ public class checkitemqpwc : MonoBehaviour
 
         Debug.Log($"Klikattiin nappia: {ingredientName}");
 
-  
+        // ? tarkista kielletyt
         foreach (Transform forbidden in forbiddenItems)
         {
             if (forbidden.name == ingredientName)
@@ -82,21 +83,42 @@ public class checkitemqpwc : MonoBehaviour
             }
         }
 
+        // ? estä duplikaatit
         if (addedIngredients.Contains(ingredientName))
         {
             Debug.Log($"{ingredientName} on jo lisätty");
             return;
         }
 
-       
+        // ? lisätään listaan
         addedIngredients.Add(ingredientName);
         Debug.Log($"Lisätty qpwc: {ingredientName}");
 
+        // ?? LUODAAN KUVA PREFABISTA
+        GameObject prefab = ingredientPrefabs.Find(p => p.name == ingredientName);
 
-        clickedTransform.SetParent(burgerStack);
-        clickedTransform.localPosition = Vector3.zero;
-        clickedTransform.SetAsLastSibling();
+        if (prefab != null)
+        {
+            GameObject newItem = Instantiate(prefab, burgerStack);
 
+            RectTransform newRect = newItem.GetComponent<RectTransform>();
+            RectTransform clickedRect = clickedTransform.GetComponent<RectTransform>();
+
+            // ?? ilmestyy napin kohdalle
+            newRect.position = clickedRect.position;
+
+            // ?? siirtyy stackiin (pinoutuu)
+            newRect.anchoredPosition = new Vector2(0, currentStackIndex * stackHeight);
+
+            newRect.SetAsLastSibling();
+            currentStackIndex++;
+        }
+        else
+        {
+            Debug.LogError("Prefabia ei löytynyt: " + ingredientName);
+        }
+
+        // ? tarkista valmistuminen
         if (addedIngredients.Count >= QpwcRecipe.Count)
         {
             Debug.Log("KAIKKI ainesosat lisätty – qpwc on valmis!");
