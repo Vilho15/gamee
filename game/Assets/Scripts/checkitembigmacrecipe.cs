@@ -21,6 +21,7 @@ public class CheckItembigmacrecipe : MonoBehaviour
     [SerializeField] private TextMeshProUGUI wrongingredientsclickstext;
     [SerializeField] private int wrongIngredientClicks = 0;
     private List<string> addedIngredients = new List<string>();
+    [SerializeField] private TMP_InputField inputField;
     public static List<string> bigMacRecipe = new List<string>()
     {
         "Bottom Bun",
@@ -35,19 +36,36 @@ public class CheckItembigmacrecipe : MonoBehaviour
 
 
     };
-    
+
     private void Awake()
     {
         Debug.Log("CheckItem her‰si: " + gameObject.name);
         Debug.Log($"CheckItem her‰si: {gameObject.name} | ID: {GetInstanceID()}");
     }
-    
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Joku tuli areaan: " + other.name);
+
+        string ingredientName = other.name.Replace("(Clone)", "").Trim();
+
+        Debug.Log("Tunnistettu ainesosa: " + ingredientName);
+
+        // Esim: tarkista resepti
+        if (bigMacRecipe.Contains(ingredientName))
+        {
+            Debug.Log("T‰m‰ kuuluu Big Maciin!");
+        }
+        else
+        {
+            Debug.Log("V‰‰r‰ ainesosa!");
+        }
+    }
 
     private static int currentIndex = 0;
 
     public void TryAddIngredient()
     {
-
+    
         if (whatburgertext == null || !whatburgertext.text.ToLower().Contains("big mac"))
         {
            

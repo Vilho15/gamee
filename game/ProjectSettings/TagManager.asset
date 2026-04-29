@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - ForbiddenIngredient
+  - moi
+  - ground
   layers:
   - Default
   - TransparentFX
