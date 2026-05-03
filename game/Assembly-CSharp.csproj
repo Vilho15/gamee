@@ -60,15 +60,13 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.18f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\textsystem.cs" />
-    <Compile Include="Assets\grabitem.cs" />
-    <Compile Include="Assets\Scripts\checkitembigmacrecipe.cs" />
-    <Compile Include="Assets\Scripts\IngredienButton.cs" />
-    <Compile Include="Assets\Scripts\checkitemelmacorecipe.cs" />
+    <Compile Include="Assets\Scripts\IngredientType.cs" />
+    <Compile Include="Assets\Scripts\IngredientButton.cs" />
+    <Compile Include="Assets\Scripts\RecipeChecker.cs" />
     <Compile Include="Assets\Scripts\ButtonHandler.cs" />
     <Compile Include="Assets\Scripts\Grabitem.cs" />
-    <Compile Include="Assets\Scripts\checkitemqpwc.cs" />
     <Compile Include="Assets\Scripts\Swapitem.cs" />
+    <Compile Include="Assets\Scripts\Recipe.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
