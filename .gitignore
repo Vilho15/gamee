@@ -9,7 +9,17 @@
 [Bb]uilds/
 [Ll]ogs/
 UserSettings/
+# Unity
+Library/
+UserSettings/
+Temp/
+Obj/
+Logs/
 
+# SQLite / Unity cache
+*.db
+*.db-wal
+*.db-shm
 # =========================
 # MemoryCaptures
 # =========================
