@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\RecipeChecker.cs" />
     <Compile Include="Assets\Scripts\ButtonHandler.cs" />
     <Compile Include="Assets\Scripts\Grabitem.cs" />
+    <Compile Include="Assets\Scripts\DropZone.cs" />
     <Compile Include="Assets\Scripts\Swapitem.cs" />
     <Compile Include="Assets\Scripts\Recipe.cs" />
   </ItemGroup>

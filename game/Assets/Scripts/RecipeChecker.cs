@@ -88,6 +88,41 @@ public class RecipeChecker : MonoBehaviour
 
         Debug.Log("Nykyinen resepti: " + newRecipe.name);
     }
+    public void TryAddIngredientFromDrop(IngredientButton btn)
+    {
+        IngredientType type = btn.type;
+
+        if (forbiddenIngredients.Contains(type))
+        {
+            wrongClicks++;
+            Debug.Log("Kielletty: " + type);
+            return;
+        }
+
+        if (!IsIngredientValid(type))
+        {
+            wrongClicks++;
+            Debug.Log("Ei kuulu reseptiin: " + type);
+            return;
+        }
+
+        if (addedIngredients.Contains(type))
+        {
+            Debug.Log("Jo lisätty: " + type);
+            return;
+        }
+
+        addedIngredients.Add(type);
+
+        SpawnIngredient(btn.prefab);
+        Debug.Log("Lisätty dropista: " + type);
+
+        if (addedIngredients.Count >= currentRecipe.ingredients.Count)
+        {
+            Debug.Log("Resepti valmis!");
+            LogPerformance();
+        }
+    }
     void SpawnIngredient(GameObject prefab)
     {
         GameObject newItem = Instantiate(prefab, burgerStack);
