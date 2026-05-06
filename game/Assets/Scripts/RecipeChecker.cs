@@ -29,54 +29,7 @@ public class RecipeChecker : MonoBehaviour
         return currentRecipe.ingredients.Contains(ingredient);
     }
 
-    public void TryAddIngredient()
-    {
-        GameObject clicked = EventSystem.current.currentSelectedGameObject;
-
-        if (clicked == null) return;
-
-        IngredientButton btn = clicked.GetComponent<IngredientButton>();
-
-        if (btn == null) return;
-
-        IngredientType type = btn.type;
-
-        // ? forbidden check
-        if (forbiddenIngredients.Contains(type))
-        {
-            wrongClicks++;
-            Debug.Log("Kielletty: " + type);
-            return;
-        }
-
-        // ? ei kuulu reseptiin
-        if (!IsIngredientValid(type))
-        {
-            wrongClicks++;
-            Debug.Log("Ei kuulu reseptiin: " + type);
-            return;
-        }
-
-        // ? duplikaatti
-        if (addedIngredients.Contains(type))
-        {
-            Debug.Log("Jo lis‰tty: " + type);
-            return;
-        }
-
-        // ? lis‰t‰‰n
-        addedIngredients.Add(type);
-
-        SpawnIngredient(btn.prefab);
-        Debug.Log("lis‰tty: " + type);
-
-        // ? valmis?
-        if (addedIngredients.Count >= currentRecipe.ingredients.Count)
-        {
-            Debug.Log("Resepti valmis!");
-            LogPerformance();
-        }
-    }
+ 
     public void SetRecipe(Recipe newRecipe)
     {
         currentRecipe = newRecipe;
@@ -134,7 +87,7 @@ public class RecipeChecker : MonoBehaviour
         currentStackIndex++;
     }
 
-    void LogPerformance()
+  public  void LogPerformance()
     {
         string msg = wrongClicks switch
         {
@@ -146,6 +99,8 @@ public class RecipeChecker : MonoBehaviour
         };
 
         ShowMessage(msg);
+        Debug.Log(msg);
+        Debug.Log("v‰‰r‰t ainesosat klikattu m‰‰r‰: " + wrongClicks);
     }
 
     void ShowMessage(string message)

@@ -15,7 +15,6 @@ public class ButtonHandler : MonoBehaviour
     [SerializeField] private Recipe elMacoRecipe;
     [SerializeField] GameObject Ingredientsbigmac;
     [SerializeField] GameObject Ingredientsqpwc;
-    [SerializeField] TextMeshProUGUI uitext;
     [SerializeField] TextMeshProUGUI textbigmac;
     [SerializeField] TextMeshProUGUI textqpwc;
     [SerializeField] TextMeshProUGUI textelmaco;
@@ -75,6 +74,7 @@ public class ButtonHandler : MonoBehaviour
     public void burgerready()
     {
         EventSystem.current.enabled = false;
+        recipe.LogPerformance();
     }
 
 

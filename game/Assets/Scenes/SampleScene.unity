@@ -4234,6 +4234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checker: {fileID: 1064595900}
+  ifclick: 0
 --- !u!114 &407214546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6804,7 +6805,6 @@ MonoBehaviour:
   elMacoRecipe: {fileID: 0}
   Ingredientsbigmac: {fileID: 0}
   Ingredientsqpwc: {fileID: 0}
-  uitext: {fileID: 0}
   textbigmac: {fileID: 0}
   textqpwc: {fileID: 0}
   textelmaco: {fileID: 0}
@@ -8079,12 +8079,11 @@ MonoBehaviour:
   elMacoRecipe: {fileID: 11400000, guid: 494ceb18e376f7743b0beb5129464e11, type: 2}
   Ingredientsbigmac: {fileID: 212075544}
   Ingredientsqpwc: {fileID: 170285656}
-  uitext: {fileID: 0}
   textbigmac: {fileID: 761147173}
   textqpwc: {fileID: 347472876}
   textelmaco: {fileID: 448832612}
   canvas: {fileID: 1960251537}
-  recipe: {fileID: 0}
+  recipe: {fileID: 1064595900}
 --- !u!114 &1064595900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8098,8 +8097,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentRecipe: {fileID: 0}
-  feedbackText: {fileID: 0}
-  feedbackBox: {fileID: 0}
+  feedbackText: {fileID: 182762828}
+  feedbackBox: {fileID: 654677428}
   burgerStack: {fileID: 0}
   stackHeight: 100
   forbiddenIngredients: 
@@ -12063,18 +12062,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1064595900}
-        m_TargetAssemblyTypeName: RecipeChecker, Assembly-CSharp
-        m_MethodName: TryAddIngredient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1821009326}
         m_TargetAssemblyTypeName: Swapitem, Assembly-CSharp
         m_MethodName: ogame
@@ -13751,7 +13738,6 @@ MonoBehaviour:
   elMacoRecipe: {fileID: 11400000, guid: 494ceb18e376f7743b0beb5129464e11, type: 2}
   Ingredientsbigmac: {fileID: 212075544}
   Ingredientsqpwc: {fileID: 170285656}
-  uitext: {fileID: 0}
   textbigmac: {fileID: 761147173}
   textqpwc: {fileID: 1255877499}
   textelmaco: {fileID: 448832612}

@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 public class DropZone : MonoBehaviour, IDropHandler
 {
     [SerializeField] RecipeChecker checker;
-
+    [SerializeField] bool ifclick;
     public void OnDrop(PointerEventData eventData)
     {
         GameObject dragged = eventData.pointerDrag;
@@ -18,7 +18,8 @@ public class DropZone : MonoBehaviour, IDropHandler
             Debug.Log("Ei IngredientButton!");
             return;
         }
-
+        ifclick = true;
+        Debug.Log("ifclick: " + ifclick);
         Debug.Log("Dropattu: " + btn.type);
 
         

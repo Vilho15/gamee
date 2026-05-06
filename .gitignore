@@ -15,7 +15,7 @@ UserSettings/
 Temp/
 Obj/
 Logs/
-
+.vs/
 # SQLite / Unity cache
 *.db
 *.db-wal

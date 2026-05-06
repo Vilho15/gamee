@@ -12,10 +12,4 @@ public class IngredientButton : MonoBehaviour
 
 
 
-    public void OnClick()
-    {
-
-
-        checkitemelmacorecipe.TryAddIngredient();
-    }
 }
