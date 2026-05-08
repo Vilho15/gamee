@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class RecipeChecker : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class RecipeChecker : MonoBehaviour
     [Header("UI")]
     [SerializeField] private TextMeshProUGUI feedbackText;
     [SerializeField] private GameObject feedbackBox;
+    [SerializeField]private GameObject canvas;
 
     [Header("Stack")]
     [SerializeField] private Transform burgerStack;
@@ -22,6 +24,9 @@ public class RecipeChecker : MonoBehaviour
     private List<IngredientType> addedIngredients = new();
     private int currentStackIndex = 0;
     private int wrongClicks = 0;
+    private int numberofclicks;
+    private int correctClicks = 0;
+
 
     // ?? TƒMƒ on se geneerinen tarkistus
     public bool IsIngredientValid(IngredientType ingredient)
@@ -38,6 +43,7 @@ public class RecipeChecker : MonoBehaviour
         addedIngredients.Clear();
         currentStackIndex = 0;
         wrongClicks = 0;
+        correctClicks = 0;
 
         Debug.Log("Nykyinen resepti: " + newRecipe.name);
     }
@@ -45,36 +51,33 @@ public class RecipeChecker : MonoBehaviour
     {
         IngredientType type = btn.type;
 
-        if (forbiddenIngredients.Contains(type))
-        {
-            wrongClicks++;
-            Debug.Log("Kielletty: " + type);
-            return;
-        }
 
-        if (!IsIngredientValid(type))
-        {
+
+        if(!IsIngredientValid(type))
+{
             wrongClicks++;
             Debug.Log("Ei kuulu reseptiin: " + type);
             return;
         }
+        int maxAllowed = CountInRecipe(type);
+        int alreadyAdded = CountAdded(type);
 
-        if (addedIngredients.Contains(type))
+        if (alreadyAdded >= maxAllowed)
         {
-            Debug.Log("Jo lis‰tty: " + type);
+            Debug.Log("Liikaa t‰t‰ ainesosaa: " + type);
+            wrongClicks++;
             return;
         }
-
+        // ? OIKEA VALINTA
         addedIngredients.Add(type);
+        correctClicks++;
 
         SpawnIngredient(btn.prefab);
         Debug.Log("Lis‰tty dropista: " + type);
-
-        if (addedIngredients.Count >= currentRecipe.ingredients.Count)
-        {
-            Debug.Log("Resepti valmis!");
-            LogPerformance();
-        }
+    }
+    float GetSuccessRate()
+    {
+        return (float)correctClicks / currentRecipe.ingredients.Count;
     }
     void SpawnIngredient(GameObject prefab)
     {
@@ -86,29 +89,49 @@ public class RecipeChecker : MonoBehaviour
 
         currentStackIndex++;
     }
-
-  public  void LogPerformance()
+    int CountInRecipe(IngredientType type)
     {
-        string msg = wrongClicks switch
-        {
-            0 => "T‰ydellinen suoritus!",
-            1 => "Yksi virhe",
-            2 => "Kaksi virhett‰",
-            3 => "Kolme virhett‰",
-            _ => "Paljon virheit‰"
-        };
+        return currentRecipe.ingredients.FindAll(i => i == type).Count;
+    }
+
+    int CountAdded(IngredientType type)
+    {
+        return addedIngredients.FindAll(i => i == type).Count;
+    }
+    public void LogPerformance()
+    {
+        float successRate = GetSuccessRate();
+
+        string msg;
+
+        if (successRate == 1f && wrongClicks == 0)
+            msg = "S (T‰ydellinen!)";
+        else if (successRate >= 0.8f && wrongClicks <= 1)
+            msg = "A";
+        else if (successRate >= 0.6f)
+            msg = "B";
+        else if (successRate >= 0.4f)
+            msg = "C";
+        else
+            msg = "Hyl‰tty";
 
         ShowMessage(msg);
-        Debug.Log(msg);
-        Debug.Log("v‰‰r‰t ainesosat klikattu m‰‰r‰: " + wrongClicks);
+
+        Debug.Log($"Oikein: {correctClicks}/{currentRecipe.ingredients.Count}");
+        Debug.Log($"V‰‰rin: {wrongClicks}");
+        Debug.Log($"Arvosana: {msg}");
+       
     }
+   
 
     void ShowMessage(string message)
     {
+       
         if (feedbackBox != null)
             feedbackBox.SetActive(true);
 
         if (feedbackText != null)
             feedbackText.text = message;
+      
     }
 }

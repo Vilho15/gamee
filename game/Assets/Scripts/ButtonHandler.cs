@@ -20,6 +20,10 @@ public class ButtonHandler : MonoBehaviour
     [SerializeField] TextMeshProUGUI textelmaco;
     [SerializeField] GameObject canvas;
     [SerializeField] RecipeChecker recipe;
+    [SerializeField] private GameObject nextbutton;
+    [SerializeField] private GameObject inputBlocker;
+
+
     public enum BurgerType
     {
         None,
@@ -69,12 +73,20 @@ public class ButtonHandler : MonoBehaviour
         canvas.SetActive(false);
     }
 
-    
-    
     public void burgerready()
     {
-        EventSystem.current.enabled = false;
+        if (recipe == null)
+        {
+            Debug.LogError("Recipe puuttuu!");
+            return;
+        }
+
+        // lukitaan UI
+        inputBlocker.SetActive(true);
+
         recipe.LogPerformance();
+
+        nextbutton.SetActive(true);
     }
 
 
