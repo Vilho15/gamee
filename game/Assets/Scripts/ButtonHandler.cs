@@ -22,7 +22,8 @@ public class ButtonHandler : MonoBehaviour
     [SerializeField] RecipeChecker recipe;
     [SerializeField] private GameObject nextbutton;
     [SerializeField] private GameObject inputBlocker;
-
+    [SerializeField] private IngredientButton ingredientbutton;
+    private bool isCooked = false;
 
     public enum BurgerType
     {
@@ -44,8 +45,11 @@ public class ButtonHandler : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(2);
     }
+    public void Start()
+    {
+        
+    }
 
- 
     public void SelectBigMac()
     {
         selectedBurger = BurgerType.BigMac;
@@ -88,6 +92,19 @@ public class ButtonHandler : MonoBehaviour
 
         nextbutton.SetActive(true);
     }
+    public void FryText(TextMeshProUGUI targetText)
+    {
+        isCooked = !isCooked;
 
+        if (isCooked)
+            targetText.text = "Paistettu Pihvi";
+        else
+            targetText.text = "Raaka Pihvi";
+    }
+    public void next()
+    {
+        SceneManager.LoadSceneAsync(1);
+        recipe.moneyText.text = "$ " + recipe.moneyText.text;
+    }
 
 }

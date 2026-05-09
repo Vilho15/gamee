@@ -26,7 +26,11 @@ public class RecipeChecker : MonoBehaviour
     private int wrongClicks = 0;
     private int numberofclicks;
     private int correctClicks = 0;
+    [Header("Money")]
+    public  TextMeshProUGUI moneyText;
 
+
+    public static int money = 0;
 
     // ?? TƒMƒ on se geneerinen tarkistus
     public bool IsIngredientValid(IngredientType ingredient)
@@ -47,32 +51,49 @@ public class RecipeChecker : MonoBehaviour
 
         Debug.Log("Nykyinen resepti: " + newRecipe.name);
     }
+    private void Start()
+    {
+        moneyText.text = "$ " + money;
+    }
+    void AddMoney(int amount)
+    {
+        money += amount;
+
+        if (moneyText != null)
+        {
+            moneyText.text = "$ " + money;
+        }
+    }
     public void TryAddIngredientFromDrop(IngredientButton btn)
     {
         IngredientType type = btn.type;
 
+        // Spawnataan aina burgeriin
+        SpawnIngredient(btn.prefab);
 
-
-        if(!IsIngredientValid(type))
-{
+        // V‰‰r‰ ainesosa
+        if (!IsIngredientValid(type))
+        {
             wrongClicks++;
             Debug.Log("Ei kuulu reseptiin: " + type);
             return;
         }
+
         int maxAllowed = CountInRecipe(type);
         int alreadyAdded = CountAdded(type);
 
+        // Liikaa samaa
         if (alreadyAdded >= maxAllowed)
         {
             Debug.Log("Liikaa t‰t‰ ainesosaa: " + type);
             wrongClicks++;
             return;
         }
-        // ? OIKEA VALINTA
+
+        // Oikea valinta
         addedIngredients.Add(type);
         correctClicks++;
 
-        SpawnIngredient(btn.prefab);
         Debug.Log("Lis‰tty dropista: " + type);
     }
     float GetSuccessRate()
@@ -82,12 +103,12 @@ public class RecipeChecker : MonoBehaviour
     void SpawnIngredient(GameObject prefab)
     {
         GameObject newItem = Instantiate(prefab, burgerStack);
-
+       
         RectTransform rect = newItem.GetComponent<RectTransform>();
 
-        rect.anchoredPosition = new Vector2(0, currentStackIndex * stackHeight);
+        rect.anchoredPosition = Vector2.zero;
 
-        currentStackIndex++;
+        newItem.transform.SetAsLastSibling();
     }
     int CountInRecipe(IngredientType type)
     {
@@ -103,26 +124,44 @@ public class RecipeChecker : MonoBehaviour
         float successRate = GetSuccessRate();
 
         string msg;
+        int earnedMoney = 0;
 
         if (successRate == 1f && wrongClicks == 0)
+        {
             msg = "S (T‰ydellinen!)";
+            earnedMoney = 100;
+        }
         else if (successRate >= 0.8f && wrongClicks <= 1)
+        {
             msg = "A";
+            earnedMoney = 75;
+        }
         else if (successRate >= 0.6f)
+        {
             msg = "B";
+            earnedMoney = 50;
+        }
         else if (successRate >= 0.4f)
+        {
             msg = "C";
+            earnedMoney = 25;
+        }
         else
+        {
             msg = "Hyl‰tty";
+            earnedMoney = 5;
+        }
 
-        ShowMessage(msg);
+        AddMoney(earnedMoney);
+
+        ShowMessage(msg + "\n+" + earnedMoney + "$");
 
         Debug.Log($"Oikein: {correctClicks}/{currentRecipe.ingredients.Count}");
         Debug.Log($"V‰‰rin: {wrongClicks}");
         Debug.Log($"Arvosana: {msg}");
-       
+        Debug.Log($"Rahaa saatu: {earnedMoney}$");
     }
-   
+
 
     void ShowMessage(string message)
     {
