@@ -6,4 +6,5 @@ public class Recipe : ScriptableObject
 {
     public string recipeName;
     public List<IngredientType> ingredients;
+
 }

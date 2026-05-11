@@ -16,7 +16,7 @@ public class RecipeChecker : MonoBehaviour
 
     [Header("Stack")]
     [SerializeField] private Transform burgerStack;
-    [SerializeField] private float stackHeight = 100f;
+    [SerializeField] private float stackHeight = 25f;
 
     [Header("Optional")]
     [SerializeField] private List<IngredientType> forbiddenIngredients;
@@ -26,6 +26,7 @@ public class RecipeChecker : MonoBehaviour
     private int wrongClicks = 0;
     private int numberofclicks;
     private int correctClicks = 0;
+    private float currentY = 0f;
     [Header("Money")]
     public  TextMeshProUGUI moneyText;
 
@@ -90,11 +91,22 @@ public class RecipeChecker : MonoBehaviour
             return;
         }
 
-        // Oikea valinta
+        // Tarkista j‰rjestys
+        if (!IsCorrectOrder(type))
+        {
+            wrongClicks++;
+
+            Debug.Log("V‰‰r‰ j‰rjestys! Odotettiin: " +
+                currentRecipe.ingredients[addedIngredients.Count]);
+
+            return;
+        }
+
+        // Oikea ingredient oikeaan aikaan
         addedIngredients.Add(type);
         correctClicks++;
 
-        Debug.Log("Lis‰tty dropista: " + type);
+        Debug.Log("Oikea ingredient oikeassa j‰rjestyksess‰: " + type);
     }
     float GetSuccessRate()
     {
@@ -103,10 +115,16 @@ public class RecipeChecker : MonoBehaviour
     void SpawnIngredient(GameObject prefab)
     {
         GameObject newItem = Instantiate(prefab, burgerStack);
-       
+
         RectTransform rect = newItem.GetComponent<RectTransform>();
 
-        rect.anchoredPosition = Vector2.zero;
+        float randomX = Random.Range(-5f, 5f);
+
+        // Asetetaan uusi kerros
+        rect.anchoredPosition = new Vector2(randomX, currentY);
+
+        // Lasketaan seuraavan kerroksen paikka
+        currentY += rect.sizeDelta.y * 0.35f;
 
         newItem.transform.SetAsLastSibling();
     }
@@ -149,7 +167,7 @@ public class RecipeChecker : MonoBehaviour
         else
         {
             msg = "Hyl‰tty";
-            earnedMoney = 5;
+            earnedMoney = 0;
         }
 
         AddMoney(earnedMoney);
@@ -162,7 +180,18 @@ public class RecipeChecker : MonoBehaviour
         Debug.Log($"Rahaa saatu: {earnedMoney}$");
     }
 
+    bool IsCorrectOrder(IngredientType ingredient)
+    {
+        // Mik‰ indeksi seuraavaksi pit‰isi t‰ytt‰‰
+        int currentIndex = addedIngredients.Count;
 
+        // Jos resepti loppui jo
+        if (currentIndex >= currentRecipe.ingredients.Count)
+            return false;
+
+        // Tarkista oikea ingredient
+        return currentRecipe.ingredients[currentIndex] == ingredient;
+    }
     void ShowMessage(string message)
     {
        
