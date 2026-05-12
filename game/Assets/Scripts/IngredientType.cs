@@ -4,6 +4,7 @@ using UnityEngine;
 
 public enum IngredientType
 {
+    //burgerien mahdolliset ainesosat
     BottomBun,
     Cheese,
     Beef,
@@ -18,6 +19,6 @@ public enum IngredientType
     Lettuce,
     Fish,
     Salt,
-    Bun2,
+    middlebun,
     Salsa
 }

@@ -5,33 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class Swapitem : MonoBehaviour
 {
+    //ainesosien kuvat
     [SerializeField] GameObject objectpictueres;
+    //aineosien button
     [SerializeField] GameObject button;
    
-   
-    
-   
-    
-    public void ogame()
+      public void ogame()
     {
+        //ainesosien kuvat samaan positioniin ainesosien buttonien kanssa
         objectpictueres.transform.position = button.transform.position;
-       //Debug.Log("player position: "+ objectpictueres.transform.position);
-        //Debug.Log("button position: "+button.transform.position);
+        //ainesosian kuvat p‰‰lle 
         objectpictueres.SetActive(true);
-        
-        
-        
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       // Debug.Log("player position: " + objectpictueres.transform.position);
-    }
+   
 }

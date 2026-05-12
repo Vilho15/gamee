@@ -3,11 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class IngredientButton : MonoBehaviour
 {
+    //ainesosien nimet
     public string ingredientName;
-    public RecipeChecker checkitemelmacorecipe;
-
-    public IngredientType IngredientType;
+     //pefab
     public GameObject prefab;
+    //viittaus ingredienttype scriptiin
     public IngredientType type;
 
 
