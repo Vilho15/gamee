@@ -2526,7 +2526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectpictueres: {fileID: 890854304}
-  button: {fileID: 245144983}
+  objectbutton: {fileID: 245144983}
 --- !u!114 &245144990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3451,7 +3451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectpictueres: {fileID: 1733449623}
-  button: {fileID: 408928621}
+  objectbutton: {fileID: 408928621}
 --- !u!114 &408928629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4266,7 +4266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectpictueres: {fileID: 1898278551}
-  button: {fileID: 625653999}
+  objectbutton: {fileID: 625653999}
 --- !u!114 &625654006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7013,7 +7013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectpictueres: {fileID: 176616271}
-  button: {fileID: 1109538271}
+  objectbutton: {fileID: 1109538271}
 --- !u!114 &1109538280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7559,7 +7559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectpictueres: {fileID: 1254219645}
-  button: {fileID: 1188787771}
+  objectbutton: {fileID: 1188787771}
 --- !u!114 &1188787778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8262,7 +8262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectpictueres: {fileID: 164382484}
-  button: {fileID: 1275843895}
+  objectbutton: {fileID: 1275843895}
 --- !u!114 &1275843901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9512,7 +9512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectpictueres: {fileID: 1314851358}
-  button: {fileID: 1663558877}
+  objectbutton: {fileID: 1663558877}
 --- !u!114 &1663558884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9676,7 +9676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectpictueres: {fileID: 138338224}
-  button: {fileID: 1692003841}
+  objectbutton: {fileID: 1692003841}
 --- !u!114 &1692003847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10356,7 +10356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectpictueres: {fileID: 1494835446}
-  button: {fileID: 1821009320}
+  objectbutton: {fileID: 1821009320}
 --- !u!114 &1821009327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10520,7 +10520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectpictueres: {fileID: 1174445191}
-  button: {fileID: 1841614253}
+  objectbutton: {fileID: 1841614253}
 --- !u!114 &1841614259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10684,7 +10684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectpictueres: {fileID: 544074196}
-  button: {fileID: 1842650083}
+  objectbutton: {fileID: 1842650083}
 --- !u!114 &1842650090
 MonoBehaviour:
   m_ObjectHideFlags: 0

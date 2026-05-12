@@ -8,12 +8,12 @@ public class Swapitem : MonoBehaviour
     //ainesosien kuvat
     [SerializeField] GameObject objectpictueres;
     //aineosien button
-    [SerializeField] GameObject button;
+    [SerializeField] GameObject objectbutton;
    
       public void ogame()
     {
         //ainesosien kuvat samaan positioniin ainesosien buttonien kanssa
-        objectpictueres.transform.position = button.transform.position;
+        objectpictueres.transform.position = objectbutton.transform.position;
         //ainesosian kuvat p‰‰lle 
         objectpictueres.SetActive(true);
     }
